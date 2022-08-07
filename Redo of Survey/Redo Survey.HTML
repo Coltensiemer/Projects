@@ -1,28 +1,54 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Redo_Survey.css" >
+    <link rel="stylesheet" href="Redo_Survey.css">
 
     <title>Document</title>
 </head>
+
 <body>
     <h1> Survey for FreeCodecamp </h1>
     <p> Fill this out to be enter into a contest!</p>
 
-<div Class="info" >
-    <label > Enter Your First Name <input name="first-name" required/></label>
+    <div Class="info">
+        <label> Enter Your <span class="right">First Name</span><input  type="text" name="first-name" required /></label>
+        <label> Enter Your Last Name <input type="text" name="last-name" required /> </label>
+        <label> Enter your Email <input type="text" name="email" required /></label>
+        <label>Enter your age <input type="number" min="0" max="120" required /></label>
+    </div>
 
-    <label > Enter Your Last Name <input last="last=name" required /> </label>
-</div>
-    
+    <div class="option"
+     <lable>What is your current position?</lable>
+        <select>
+            <option value="""></option>
+            <option value="1">Student</option>
+            <option value="2">Teacher</option>
+        </select>
+    </div>
+
+    <div class="radio"
+    <lable> Would you recommend this is your Friend?</lable>
+        <input type="radio">Yes
+        <input type="radio">No
+    <div>
+
+    <div class="checkbox"
+    <lable> What is your favorite part of coding</lable>
+    <input type="checkbox" name="checkbox"/>
+    <input type="checkbox" name="checkbox"/>
+    <input type="checkbox" name="checkbox"/>
+    <input type="checkbox" name="checkbox"/>
+    </div>d
 
 
 
-    
-    
+
+
+
 </body>
+
 </html>
