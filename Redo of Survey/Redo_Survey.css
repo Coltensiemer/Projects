@@ -1,25 +1,54 @@
 body {
     text-align: center;
-    min-width: none;
-    padding: 10px 0:
+    margin-top: 100px;
 }
 
-.info{
+.info
+{
+    margin: 1rem auto; 
+    width:75%;
     
-    margin: 100px px auto;
-   padding: 10px 0;
-
-    font-size: 1rem;
+    
 }
+
+.label 
+{text-align: center;
     
+
+}
+
+#name, #email, #number
+{ margin: 3px  auto;
+    padding-right: 50%;
+    padding-left:50%
+
+
+
+}
 
 .option, .radio{
-    margin:auto;
-    padding: 10px 0;
+    margin:10px; 
+    width: 100%
+
+
 
 }
+.option{
+    
+}
+.checkbox
+{
+    margin: 1rem;  
+    font-weight: 100px;
+    
+}
 	
+#checkbox {
+    margin-top: 10px;
+    display: inline-block;
 
+
+}
 
 
     

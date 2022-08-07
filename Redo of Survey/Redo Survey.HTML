@@ -15,40 +15,49 @@
     <p> Fill this out to be enter into a contest!</p>
 
     <div Class="info">
-        <label> Enter Your <span class="right">First Name</span><input  type="text" name="first-name" required /></label>
-        <label> Enter Your Last Name <input type="text" name="last-name" required /> </label>
-        <label> Enter your Email <input type="text" name="email" required /></label>
-        <label>Enter your age <input type="number" min="0" max="120" required /></label>
+        <label> Enter Your First Name <input id="name" type="text" name="first-name" required /></label>
+        <label> Enter Your Last Name <input id="name" type="text" name="last-name" required /> </label>
+        <label> Enter your Email <input id="email" type="text" name="email" required /></label>
+        <label>Enter your age <input id="number" type="number" min="0" max="120" required /></label>
     </div>
 
-    <div class="option"
-     <lable>What is your current position?</lable>
+    <div class="option">
+        <legend>What is your current poistion?</legend>
         <select>
-            <option value="""></option>
+            <option value=""></option>
             <option value="1">Student</option>
             <option value="2">Teacher</option>
         </select>
     </div>
 
-    <div class="radio"
-    <lable> Would you recommend this is your Friend?</lable>
-        <input type="radio">Yes
-        <input type="radio">No
-    <div>
-
-    <div class="checkbox"
-    <lable> What is your favorite part of coding</lable>
-    <input type="checkbox" name="checkbox"/>
-    <input type="checkbox" name="checkbox"/>
-    <input type="checkbox" name="checkbox"/>
-    <input type="checkbox" name="checkbox"/>
-    </div>d
+    <div class="radio">
+        <legend>Would you recommend this is your Friend?</legend>
+        <input name="yes or no" type="radio" value="yes">Yes
+        <input name="yes or no" type="radio" value="no">No
+        <div>
 
 
+            <div class="option">
+                <legend>How often do you code?</legend>
+                <select>
+                    <option value=""></option>
+                    <option value="Once a day">Once a Day</option>
+                    <option value="Once a weekly"> Once a Week</option>
+                    <option value="Once a month"> Once a Month</option>
+                </select>
+            </div>
 
+            <div class="checkbox">
+                <legend>What is your favorite part of coding? <legend>
+                        <input id="checkbox" type="checkbox" name="checkbox" /> Coding</input>
+                        <input id="checkbox" type="checkbox" name="checkbox" /> Problem-Solving</input>
+                        <input id="checkbox" type="checkbox" name="checkbox" /> Learning</input>
+                        <input id="checkbox" type="checkbox" name="checkbox" /> The Math</input>
+            </div>
 
-
-
+            <div class="textbook">
+                <legend> Any Comments or Suggestions? </legend>
+                <textarea id="textarea" name="textarea" placeholder="Enter your comments here"
+            
 </body>
-
 </html>
