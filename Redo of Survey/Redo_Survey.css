@@ -43,6 +43,8 @@ opacity: 95%
    width: 100%;
     text-align: center;
     display:block;
+    color:black;
+
 
 }
 
@@ -52,7 +54,7 @@ opacity: 95%
     
 }
 
-#radio, #option {
+#radio, #dropdown, #option{
     margin: .5rem
     
 

@@ -7,29 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Redo_Survey.css">
 
-    <title>Document</title>
+    <title>Survey Form Project</title>
     
 </head>
 
 <body>
+
     <main class="main">
-    <h1> Fun with Coding!</h1>
-    <p> Fill this out this survey to be enter into a contest!</p>
+    <form id="survey-form">
+    <h1 id="title"> Fun with Coding!</h1>
+    <p id="description"> Fill this out this survey to be enter into a contest!</p>
 
     <div Class="info">
-        <label>Enter Your First Name </label>
-         <input id="name" type="text" name="first-name" required />
-        <label>Enter Your Last Name<label>
-        <input id="name" type="text" name="last-name" required />
-        <label>Enter your Email</label>
-        <input id="email" type="text" name="email" required />
-        <label>Enter your Age</label>
-       <input id="number" type="number" min="0" max="120" required />
+        <label id="name-label">Enter Your First Name </label>
+         <input id="name" type="text" value="text" name="first-name" placeholder="First Name" required /> </input>
+        <label id="name label">Enter Your Last Name<label>
+        <input id="name" type="text" value="text" name="last-name" placeholder="Last Name" required />
+        <label id="email-label">Enter your Email</label>
+        <input id="email" type="email" value="email" name="email" placeholder="email" required />
+        <label id="number-label">Enter your Age</label>
+       <input id="number" type="number" value="number" min="0" max="120" placeholder="age" required />
     </div>
 
     <div class="option">
         <legend>What is your current poistion?</legend>
-        <select id="option">
+        <select id="dropdown">
             <option value=""></option>
             <option value="1">Student</option>
             <option value="2">Teacher</option>
@@ -47,18 +49,18 @@
                 <legend id="label-size">How often do you code?</legend>
                 <select id="option">
                     <option value=""></option>
-                    <option value="Once a day">Once a Day</option>
-                    <option value="Once a weekly"> Once a Week</option>
-                    <option value="Once a month"> Once a Month</option>
+                    <option value="1">Once a Day</option>
+                    <option value="2"> Once a Week</option>
+                    <option value="3"> Once a Month</option>
                 </select>
             </div>
 
             <div class="checkbox">
                 <legend id="label-size">What is your favorite part of coding? <legend>
-                        <input id="checkbox" type="checkbox" name="checkbox" /> Coding</input>
-                        <input id="checkbox" type="checkbox" name="checkbox" /> Problem-Solving</input>
-                        <input id="checkbox" type="checkbox" name="checkbox" /> Learning</input>
-                        <input id="checkbox" type="checkbox" name="checkbox" /> The Math</input>
+                        <input id="checkbox" type="checkbox" value="coding" name="checkbox" /> Coding</input>
+                        <input id="checkbox" type="checkbox" value="Problem-Solving" name="checkbox" /> Problem-Solving</input>
+                        <input id="checkbox" type="checkbox" value="Learning" name="checkbox" /> Learning</input>
+                        <input id="checkbox" type="checkbox" Value="The Math" name="checkbox" /> The Math</input>
             </div>
 
             <div class="textarea">
@@ -67,10 +69,10 @@
                 </div>
 
 
-     <button class="submit" type="submit">Submit</button>
-    </button>
+     <button id="submit" class="submit" type="submit">Submit</button>
+    
 
-
+</form>
 </main>
 </body>
 </html>
