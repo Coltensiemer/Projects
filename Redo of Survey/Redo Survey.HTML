@@ -8,22 +8,28 @@
     <link rel="stylesheet" href="Redo_Survey.css">
 
     <title>Document</title>
+    
 </head>
 
 <body>
-    <h1> Survey for FreeCodecamp </h1>
-    <p> Fill this out to be enter into a contest!</p>
+    <main class="main">
+    <h1> Fun with Coding!</h1>
+    <p> Fill this out this survey to be enter into a contest!</p>
 
     <div Class="info">
-        <label> Enter Your First Name <input id="name" type="text" name="first-name" required /></label>
-        <label> Enter Your Last Name <input id="name" type="text" name="last-name" required /> </label>
-        <label> Enter your Email <input id="email" type="text" name="email" required /></label>
-        <label>Enter your age <input id="number" type="number" min="0" max="120" required /></label>
+        <label>Enter Your First Name </label>
+         <input id="name" type="text" name="first-name" required />
+        <label>Enter Your Last Name<label>
+        <input id="name" type="text" name="last-name" required />
+        <label>Enter your Email</label>
+        <input id="email" type="text" name="email" required />
+        <label>Enter your Age</label>
+       <input id="number" type="number" min="0" max="120" required />
     </div>
 
     <div class="option">
         <legend>What is your current poistion?</legend>
-        <select>
+        <select id="option">
             <option value=""></option>
             <option value="1">Student</option>
             <option value="2">Teacher</option>
@@ -32,14 +38,14 @@
 
     <div class="radio">
         <legend>Would you recommend this is your Friend?</legend>
-        <input name="yes or no" type="radio" value="yes">Yes
-        <input name="yes or no" type="radio" value="no">No
+        <input  Id="radio" name="yes or no" type="radio" value="yes">Yes
+        <input id="radio" name="yes or no" type="radio" value="no">No
         <div>
 
 
             <div class="option">
-                <legend>How often do you code?</legend>
-                <select>
+                <legend id="label-size">How often do you code?</legend>
+                <select id="option">
                     <option value=""></option>
                     <option value="Once a day">Once a Day</option>
                     <option value="Once a weekly"> Once a Week</option>
@@ -48,16 +54,23 @@
             </div>
 
             <div class="checkbox">
-                <legend>What is your favorite part of coding? <legend>
+                <legend id="label-size">What is your favorite part of coding? <legend>
                         <input id="checkbox" type="checkbox" name="checkbox" /> Coding</input>
                         <input id="checkbox" type="checkbox" name="checkbox" /> Problem-Solving</input>
                         <input id="checkbox" type="checkbox" name="checkbox" /> Learning</input>
                         <input id="checkbox" type="checkbox" name="checkbox" /> The Math</input>
             </div>
 
-            <div class="textbook">
+            <div class="textarea">
                 <legend> Any Comments or Suggestions? </legend>
-                <textarea id="textarea" name="textarea" placeholder="Enter your comments here"
-            
+                <textarea id="textarea" name="textarea" placeholder="Enter your comments here"></textarea>
+                </div>
+
+
+     <button class="submit" type="submit">Submit</button>
+    </button>
+
+
+</main>
 </body>
 </html>
