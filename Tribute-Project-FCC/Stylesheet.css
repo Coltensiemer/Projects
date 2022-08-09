@@ -1,0 +1,29 @@
+
+header{
+    
+    /* Change color and round edges */
+    background-color:rgb(176, 179, 182);
+    margin: 0 5px;
+    padding: 10px;
+    padding-right: 50%;  
+    border: 2px black solid;
+
+}
+
+#Tribute-link {
+    background-image: url("Theodore Roosevelt portrait.jpeg");
+    
+}
+
+#tribute-info {
+    background-color: rgb(168, 151, 151);
+    padding: 15px 30px;
+    border: 3px black solid;
+}
+
+#img-caption {
+    height: 250px;
+    padding-left: 40%;
+    position: relative;
+    
+}
