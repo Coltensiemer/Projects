@@ -5,7 +5,7 @@ body {
 header{
     
     /* Change color and round edges */
-    background-color:rgb(176, 179, 182);
+    background-color:rgb(173, 194, 215);
     margin: 0 5px;
     padding: 10px;  
     border: 2px black solid;
@@ -40,6 +40,7 @@ header{
     border-bottom: 4px solid;
     margin-right: auto;
     padding: 15px;
+    border-radius: 20px;
     
 
     font-size: larger;
@@ -54,11 +55,10 @@ img {
 
 #image {
     height: auto;
-    display: block;
     padding-left: 30%;
     position: relative;
     text-align: center;
-    max-width: 100%;
+    max-width: 250px;
     
 }
 #img-caption {
@@ -87,4 +87,36 @@ img {
     border: 3px black solid;
     border-radius: 20px;
     overflow: hidden;
+
+}
+
+
+fieldset {
+    border: 2px solid black;
+}
+
+#Fact1 {
+    background-color: rgb(223, 201, 150);
+    border: 3px black solid;
+}
+
+#Fact2 {
+    background-color: rgb(222, 183, 166);
+    border: 3px black solid;
+}
+
+#Fact3 {
+    background-color: rgb(217, 169, 174);
+    border: 3px black solid;
+}
+
+#Fact4 {
+    background-color: rgb(179, 146, 181);
+    border: 3px black solid;
+}
+#Fact5
+{
+    background-color: rgb(176, 201, 152);
+    border: 3px black solid;
+    
 }
