@@ -61,18 +61,12 @@ opacity: 95%
     
 
 }
-.checkbox
-{
-    margin: 5px; 
-    
-}
 
-#label-size {
-    
-}
+
 	
 #checkbox {
     margin-top: 10px;
+    margin-bottom: 20px;
     display: inline-block;
 }
 
