@@ -1,0 +1,31 @@
+
+.flexbox-container{ 
+display: flex;
+
+}
+
+.flexbox-container
+{
+    background-color: aqua;
+    width: 200px;
+    border: 3px solid black;
+    margin: 10px;
+}
+
+.flexbox-item-1 {
+
+   min-height: 100px;
+}
+
+.flexbox-item-2 {
+
+    min-height: 200px;
+    
+
+}
+.flexbox-item-3 {
+
+    min-height: 300px;
+
+
+}
