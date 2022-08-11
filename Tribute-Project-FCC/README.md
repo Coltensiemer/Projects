@@ -7,8 +7,17 @@ Description:
     This is a static page that shows the greats moments to Theodora Roosevelt's life
     There is a time line listed to show the greatest moments with pictures Incorporated when possible
 
-    Users are able to view time line and photos
+Goals: 
+
+    Table of contents where users can jump to sections 
+    Gives information about Teddy 
     There is a link to the citation web pages 
 
 
+    
+    
+    
+    
     source: https://en.wikipedia.org/wiki/Theodore_Roosevelt#Early_life_and_family
+
+    Noble Peace Prize: https://www.nobelprize.org/prizes/peace/1906/roosevelt/facts/ 

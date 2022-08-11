@@ -1,52 +1,60 @@
 body {
     background-color: rgba(179, 204, 219, 0.879);
-    padding: 20px; 
+    padding: 20px;
 }
-header{
-    
+
+header {
+
     /* Change color and round edges */
-    background-color:rgb(173, 194, 215);
+    background-color: rgb(173, 194, 215);
     margin: 0 5px;
-    padding: 10px;  
+    padding: 10px;
     border: 2px black solid;
     border-radius: 20px;
     margin-bottom: -20px;
-    
+
+
+}
+
+#Table {
+    margin: 10px auto;
 
 }
 
 #tribute-info {
     background-color: rgb(239, 218, 169);
     padding: 15px 30px;
-    margin: auto;
     border: 3px black solid;
     border-top: 5px solid black;
     border-radius: 20px;
     display: block;
+    opacity: 75%;
+
 }
 
 
-#story { 
-    background-color: inherit black; 
-    
+#story {
+    background-color: inherit black;
+
 }
 
 .quote {
-    
+
     position: relative;
-    top: 100px; right: 80px;
+    top: 100px;
+    right: 80px;
     background-color: rgb(161, 215, 216);
     border: 3px black solid;
     border-bottom: 4px solid;
     margin-right: auto;
     padding: 15px;
     border-radius: 20px;
-    
+
 
     font-size: larger;
-    
-    
-    
+
+
+
 }
 
 img {
@@ -56,27 +64,40 @@ img {
 #image {
     height: auto;
     padding-left: 30%;
-    position: relative;
+    position: sticky;
     text-align: center;
     max-width: 250px;
-    
-}
-#img-caption {
-    padding-left:50% ;
-    font-size: 12px;
-    text-align: center;
-    
+
 }
 
-#img-div {
+#img-caption {
+    padding-left: 50%;
+    font-size: 12px;
+    text-align: center;
+
+}
+
+#image2 {
+    
+   
+    max-width: 1000px;
+    max-height: 500px;
+    position: relative;
+    float: right;
+
+
+
+    
+}
+ #img-div {
 
     margin-left: 60px;
 
+
 }
 
 
-#link
-{
+#link {
 
     position: relative;
     background-color: rgb(161, 215, 216);
@@ -98,25 +119,35 @@ fieldset {
 #Fact1 {
     background-color: rgb(223, 201, 150);
     border: 3px black solid;
+    border-radius: 20px;
+    border-bottom: 3px black solid;
 }
 
 #Fact2 {
     background-color: rgb(222, 183, 166);
     border: 3px black solid;
+    border-radius: 20px;
+    border-bottom: 3px black solid;
 }
 
 #Fact3 {
     background-color: rgb(217, 169, 174);
     border: 3px black solid;
+    border-radius: 20px;
+    border-bottom: 3px black solid;
 }
 
 #Fact4 {
     background-color: rgb(179, 146, 181);
     border: 3px black solid;
+    border-radius: 20px;
+    border-bottom: 3px black solid;
 }
-#Fact5
-{
+
+#Fact5 {
     background-color: rgb(176, 201, 152);
     border: 3px black solid;
-    
+    border-radius: 20px;
+    border-bottom: 3px black solid;
+
 }
