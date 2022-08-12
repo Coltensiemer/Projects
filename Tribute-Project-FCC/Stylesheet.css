@@ -26,6 +26,7 @@ header {
 
 }
 
+
 #tribute-info {
     background-color: rgb(239, 218, 169);
     padding: 15px 30px;
@@ -48,18 +49,13 @@ header {
     position: relative;
     top: 100px;
     right: 80px;
-    background-color: rgb(161, 215, 216);
+    background-color: rgba(179, 204, 219, 0.879);
     border: 3px black solid;
     border-bottom: 4px solid;
     margin-right: auto;
     padding: 15px;
     border-radius: 20px;
-
-
     font-size: larger;
-
-
-
 }
 
 img {
@@ -87,10 +83,12 @@ img {
 
 
 #Section-image2 {
-background-color: rgb(139, 146, 17);
+background-color: rgb(173, 194, 215);
 display: flex;
 justify-content: center;
-margin: 10px
+margin: -25px;
+border-radius: 20px;
+
 
 }
 
@@ -111,7 +109,7 @@ margin: 10px
 
 
 
-}
+
  #img-div {
 
     margin-left: 60px;
@@ -144,6 +142,7 @@ fieldset {
     border: 3px black solid;
     border-radius: 20px;
     border-bottom: 3px black solid;
+    opacity: 75%;
 }
 
 #Fact2 {
