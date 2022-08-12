@@ -1,15 +1,20 @@
 
-.flexbox-container{ 
-display: flex;
-
+.flexbox-container { 
+display: flex; 
+justify-content: center;
+background-color: blanchedalmond;
+flex-direction: column;
+height: 800px;
+align-items: center;
 }
 
-.flexbox-container
+.flexbox-item 
 {
-    background-color: aqua;
+    background-color: blue;
     width: 200px;
     border: 3px solid black;
     margin: 10px;
+    color: aliceblue;
 }
 
 .flexbox-item-1 {
@@ -28,4 +33,13 @@ display: flex;
     min-height: 300px;
 
 
+}
+
+.axis-main {
+
+
+}
+.axis-cross {
+
+    
 }
