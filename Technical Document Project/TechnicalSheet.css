@@ -1,29 +1,48 @@
 body {
-
-    background-color: green;
+    background-color: antiquewhite;
 }
 
 .Header { 
-
-
-
+    margin: .5rem;
+    border: 3px solid black;
+    padding: 10%;
+    text-align: center;
+    justify-items: center;
+    max-width: 100%
+    
 }
 
-.navbar {
-  
+.navbar { 
 
-}
+    display: flex;
+    flex-direction: column;
+    flex: start; 
+    max-width: 100%;
+    align-content: flex-start;
+    max-height: 100%;
+    min-height: 100%;
 
-.FlexNav 
-    { 
    
-
-    }
-
-.FlexNav1 {
-
     
 
-
-
 }
+
+
+.FlexNav { 
+
+    border: 1px solid black;
+    border-right: 2px solid black; 
+    border-left: 2px solid black; 
+    padding: 5%;
+    min-width: 10%;
+    max-width: 25%;
+    justify-content: center;
+   
+    background-color: white;
+    text-align: center;
+}
+
+.FlexNav:hover {
+    background-color: gray;
+}
+
