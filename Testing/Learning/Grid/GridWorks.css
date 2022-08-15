@@ -1,0 +1,42 @@
+body { 
+    background-color: azure;
+}
+
+.Grid-col-span { 
+    grid-column: 2;
+
+
+}
+/* gird overlay */
+
+.parent-grid { 
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4,1fr); 
+  
+}
+
+.parent-grid:last-child {
+
+    background-color: ;
+}
+
+.child-grid:last-child 
+{ 
+    background-color: blue;
+    grid-column: 1;
+}
+
+.child-grid:first-child
+{
+    background-color: red;
+    grid-column: 3;
+}
+
+
+p { 
+
+    background-color: aqua;
+    border: 3px black solid;
+    
+}
