@@ -18,9 +18,9 @@
     <nav class="navbar">
         <div class="FlexNav1 FlexNav">Introduction</div>
         <p></p>
-        <div class="FlexNav2 FlexNav">Parent Container</div>
+        <div class="FlexNav2 FlexNav">Containers</div>
         <p></p>
-        <div class="FlexNav3 FlexNav">Flex Items
+        <div class="FlexNav3 FlexNav">Flex Properties
         </div>
         <p></p>
         <div class="FlexNav4 FlexNav">Flex Responsive</div>
@@ -36,60 +36,121 @@
             <header class="headernav">Introduction</header>
             <article>
                 <p></p>
-               Flexbox was created as another way to adjust rows and columns in a more efficient way. Being able to adjust the height, width, gap spacing, and other items inside of a container. 
+                Flexbox was created as another way to adjust rows and columns in a more efficient way. Being able to
+                adjust the height, width, gap spacing, and other items inside of a container.
             </article>
         </section>
         <section class="main-section" id="Parent_Container">
             <header class="headernav">Parent Container</header>
             <article>
+
                 <p>
-                When using flex, it is important to understand the parent-child dynamics. <br><br>
-                The Parent will be the container. Any elements of <bold>direct</bold> relationship to the parent  will have their layouts effected inside the container. <br> 
-                This excludes 'grand-children'. <br><br>
+                    When using flex, it is important to understand the parent-child dynamics. <br><br>
+                    The Parent will be the main container which contains direct descendance - known as childern. Any
+                    elements of <bold>direct</bold> relationship to the parent will have their layouts effected inside
+                    the container. <br>
+                    This excludes 'grand-children' - non direct descendance. <br><br>
 
-                
-                <div Id="parent-container"> <h5 class="container-text"> Parent Container</h5>
-                    <div class="child-container"><h5 class="container-text-child"> Child Container</h5></div>
-                    <div class="child-container"><h5 class="container-text-child"> Child Container</h5></div>
-                    <div class="child-container"> <h5 class="container-text-child"> Child Container</h5></div>
+
+                <div Id="parent-container">
+                    <h5 class="container-text"> Parent Container</h5>
+                    <div class="child-container">
+                        <h5 class="container-text-child"> Child Container</h5>
+                    </div>
+                    <div class="child-container">
+                        <h5 class="container-text-child"> Child Container</h5>
+                    </div>
+                    <div class="child-container">
+                        <h5 class="container-text-child"> Child Container</h5>
+                    </div>
                 </div>
-            
-                To start using flex, the parent container needs to be changed to [display:flex;]. <br> 
+
+                To start using flex, the parent container needs to be changed to [display:flex;]. <br>
+
+                <!-- Add a photo for example of HTML -->
+
+                <h4> Children Items</h4>
+                <p> A child <b>item</b>, or known as child <b> element </b>is what is directly connected to the parent.
+                    <br>
 
 
+                    To create a child element, there needs to be an element nested inside the parent in HTML. <br>
 
+                    <!-- Image of example of child nested -->
                 </p>
-                <ul> 
-                    <p>FlexBox works by allowing the childern in the container to be established on two different axis. </p>
-                    <li> Vertical Direction (columns)
-                
-                        <div id="parent-container-E1"> <h5 class="container-text"> Parent Container</h5>
-                            <div class="child-container-E1"><h5 class="container-text-child"> Child Container</h5></div>
-                            <div class="child-container-E1"><h5 class="container-text-child"> Child Container</h5></div>
-                            <div class="child-container-E1"> <h5 class="container-text-child"> Child Container</h5></div>
-                        </div>
- 
-                    </li>
-                    <li> Horizontal Direction (rows)
 
-                    </li>
-                </ul>
             </article>
         </section>
         <section class="main-section" id="Flex_Items">
-            <header class="headernav">Flex Items</header>
+            <header class="headernav">Flex Properties</header>
             <article>
-                <!-- <p> Examples what this selection does </p> -->
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptate magni officiis blanditiis?
-                Praesentium, harum quis. Dolorem labore, et laborum aliquam exercitationem explicabo modi delectus qui
-                debitis pariatur, eveniet aliquid.
-                <p></p>
+                <h1>Flex Direction</h1>
+
+                <p>FlexBox works by allowing the childern itmes in the container to be established on two different
+                    axis. <br>
+
+                    Flex direction is an part of how child items are placed inside the parent container. There are
+                    mutiple different Properties that effect the direction of the flex box it self.
+                    <br><br>The main flex directions
                 <ul>
-                    <li>
+                    <li>Column</li>
+                    <li>Column-Reverse</li>
+                    <li>Row</li>
+                    <li>Row-Reverse</li>
+
+                </ul>
+                </p>
+                </p>
+                <ul>
+                    <li> Column
+                        <br> <br>
+                        This is created by a <b>[Flex-Direction: Col;]</b> in CSS
+
+                        <div id="parent-container-E1">
+                            <div class="child-container-E1">1</div>
+                            <div class="child-container-E1">2</h5>
+                            </div>
+                            <div class="child-container-E1">3</div>
+                        </div>
                     </li>
                     <li>
+                        Row
+                        <br><br>
+                        This is created by a <b>[Flex-Direction: Row;]</b> in CSS
+                        <div id="parent-container-E2">
+                            <div class="child-container-E2">1</div>
+                            <div class="child-container-E2">2</h5>
+                            </div>
+                            <div class="child-container-E2">3</div>
+                    
+                        </div>
+                        <p> Row alings the children items from left to right in a single line </p>
+
                     </li>
                 </ul>
+                <h1></h1>
+                <p></p>
+                <lu>
+                    <li> Column-Reverse
+                        <div id="parent-container-E3">
+                            <div class="child-container-E3">1</div>
+                            <div class="child-container-E3">2</h5>
+                            </div>
+                            <div class="child-container-E3">3</div>
+                        </div>
+                        
+
+                    </li>
+                    <li> Row-Reverse
+                        <div id="parent-container-E4">
+                            <div class="child-container-E4">1</div>
+                            <div class="child-container-E4">2</h5>
+                            </div>
+                            <div class="child-container-E4">3</div>
+                        </div>
+                            <p> Reverse for column and row are similar to first properties however this reverses the order of the children items listed. <br><br>
+                                These are created by a <b>[Flex-Direction: Column | Row | Column-Reverse | Row-Reverse;]</b> in CSS </p>
+                </lu>
             </article>
         </section>
         <section class="main-section" id="Flex_Responsive">
@@ -131,7 +192,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptate magni officiis blanditiis?
                 Praesentium, harum quis. Dolorem labore, et laborum aliquam exercitationem explicabo modi delectus qui
                 debitis pariatur, eveniet aliquid.
-                <p></p> 
+                <p></p>
                 <ul>
                     <li>
                     </li>

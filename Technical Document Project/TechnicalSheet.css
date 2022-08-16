@@ -20,7 +20,7 @@ body {
 
 /* edit */
 .navbar {  
-    background-color: gray; 
+    background-color: rgb(194, 189, 189); 
     display: flex;
     flex-direction: column; 
     max-width: 200%;
@@ -39,7 +39,7 @@ body {
     border-right: none;
     padding: 20%;
  
-    background-color: grey;
+    background-color: rgb(194, 189, 189);
     text-align: center;
 }
 
@@ -89,8 +89,8 @@ body {
 .child-container { 
     z-index: 2;
     background-color: rgb(51, 172, 212);
-    height: 100px; 
-    width: 100px;
+    height: 90px; 
+    width:90px;
     margin: auto;
     row-gap: 1rem;
     border: 3px dashed rgb(0, 0, 0);
@@ -116,4 +116,58 @@ body {
         font-size: 12px;
         text-align: center;
     }
+
+
+
+    .Row-cols 
+    {
+        background-color: aqua;
+        display: flex;
+    
+       
+    }
+
+#parent-container-E1,  #parent-container-E2,  #parent-container-E3,  #parent-container-E4
+
+    {
+        background-color: rgb(233, 193, 101);
+        position: relative;
+        left: 50px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        height: 25vw; 
+        max-width: 25vw;
+        min-width: 25vw;
+        border: 4px dashed black;
+        border-radius: 15px;
+    
+    }
+    
+.child-container-E1, .child-container-E2, .child-container-E3, .child-container-E4 { 
+        z-index: 1;
+        background-color: rgb(51, 172, 212);
+        flex-shrink: 1;
+        height: 40px; 
+        width: 40px;
+        margin: auto;
+        row-gap: 1rem;
+        border: 2px dashed rgb(0, 0, 0);
+        border-radius: 5px;
+        color: white;
+        text-align: center;
+        
+    }
+
+    #parent-container-E2,  #parent-container-E4
+    {
+        flex-direction: row;
+    }
+  
+    
+
+        
+    
+    
 
