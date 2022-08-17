@@ -9,9 +9,9 @@ body {
    margin: 0;
     min-width: 100%;
     max-width: 100%; 
-    background-color: orange;
-    position: fixed;
+    background-color:rgb(233, 193, 101);
     z-index: 999; 
+    position:sticky;
     top: 0; 
     left: 0; 
     
@@ -21,20 +21,15 @@ body {
 header {
 
     text-align: center;
-    border-bottom: 3px black dashed;
-    border-top: 3px black dashed; 
+    border: 2px black dashed; 
     background-color: rgb(201, 200, 200);
+    z-index: 999;
 }
 
-h1, .Direction-dot { 
 
-    text-align: center;
-    
-}
 
-.Direction-dot {
-    text-align: center;
-}
+
+
 /* edit */
 .navbar {  
     background-color: rgb(194, 189, 189); 
@@ -45,6 +40,8 @@ h1, .Direction-dot {
     border: 2px black dashed; 
     height: 100%;
     top: 50px; 
+    margin-top: 30px; 
+
     
 }
 
@@ -87,6 +84,7 @@ h1, .Direction-dot {
     font-size: larger;
     padding: 10px;
     margin: 20px auto;
+    margin-top: 50px; 
 }
 
 #parent-container
@@ -109,8 +107,8 @@ h1, .Direction-dot {
 .child-container { 
     z-index: 1;
     background-color: rgb(51, 172, 212);
-    height: 90px; 
-    width:90px;
+    height: 120px; 
+    width:120px;
     margin: auto;
     row-gap: 1rem;
     border: 3px dashed rgb(0, 0, 0);
@@ -155,15 +153,15 @@ h1, .Direction-dot {
     {
         background-color: rgb(233, 193, 101);
         position: relative;
-        left: 50px;
+        
         z-index: 1;
         display: flex;
         flex-direction: column;
-        margin: 10px;
-        max-height: 10vw; 
-        min-height: 10vw;
-        max-width: 10vw;
-        min-width: 10vw;
+        margin-bottom: 20px;
+        max-height: 15vw; 
+        min-height: 15vw;
+        max-width: 15vw;
+        min-width: 15vw;
         border: 4px dashed black;
         border-radius: 15px;
     
@@ -191,11 +189,15 @@ h1, .Direction-dot {
     #parent-container-E2  
     {
         flex-direction: row;
+       
         
     }
 
+
+
     #parent-container-E4 {
         flex-direction: row-reverse;
+       
     }
   
     #parent-container-E3 { 
@@ -209,13 +211,18 @@ h1, .Direction-dot {
     }
     
     #Direction-Container {
-        background-color: rgb(102, 95, 95);
+        background-color: rgb(192, 185, 185);
         display: flex;
         justify-content: center;
         flex-direction: row;
-        gap: 3rem; 
+        max-width: 100%;
+        margin: 0;
     }   
 
+
     li {
-        color: white;
+        
+        list-style-type: none;
+        text-align: center;
+        margin-bottom: 10px;
     }
