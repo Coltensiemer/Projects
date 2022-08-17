@@ -32,7 +32,7 @@ header {
 
 /* edit */
 .navbar {  
-    background-color: rgb(194, 189, 189); 
+    background-color: rgb(251, 249, 249); 
     display: flex;
     flex-direction: column; 
     max-width: 200%;
@@ -53,14 +53,13 @@ header {
     border-right: none;
     padding: 20%;
  
-    background-color: rgb(194, 189, 189);
+    background-color: rgb(251, 249, 249);
     text-align: center;
 }
 
 .FlexNav:hover {
-    background-color: gray;
-    color: white;
-    border: 2px black dashed;
+    background-color: rgb(51, 172, 212);
+    border: 3px black dashed;
 }
 
 
@@ -211,12 +210,13 @@ header {
     }
     
     #Direction-Container {
-        background-color: rgb(192, 185, 185);
+        background-color: rgb(255, 255, 255);
         display: flex;
         justify-content: center;
         flex-direction: row;
         max-width: 100%;
         margin: 0;
+        flex-wrap: wrap;
     }   
 
 
@@ -224,5 +224,70 @@ header {
         
         list-style-type: none;
         text-align: center;
-        margin-bottom: 10px;
+        margin: 40px;
+        font-size: larger;
     }
+
+ #Direction-Container2 { 
+    background-color: rgb(0, 255, 255);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 100%;
+    margin: 0;
+    flex-wrap: wrap;
+
+    }
+
+    #parent-container-Just1, #parent-container-Just2, #parent-container-Just3, #parent-container-Just4, #parent-container-Just5 { 
+        background-color: rgb(233, 193, 101);
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        max-height: 15vw; 
+        min-height: 15vw;
+        max-width: 15vw;
+        min-width: 15vw;
+        border: 4px dashed black;
+        border-radius: 15px;
+        gap: 1px;
+    }
+
+    #parent-container-Just1 {
+        justify-self: start
+    }
+
+    #parent-container-Just2 {
+        justify-content: center;
+    }
+    #parent-container-Just3 {
+        justify-content: space-between;
+    }
+    #parent-container-Just4 {
+        justify-content: space-around;
+    }
+    #parent-container-Just5 {
+        justify-content: space-evenly;
+    }
+    
+
+    .child-container-E5,  .child-container-E6{
+        z-index: 1;
+        background-color: rgb(51, 172, 212);
+        flex-shrink: 0;
+        height: 3vw;; 
+        max-width: 3vw;
+        min-width: 3vw;
+        flex-wrap: wrap;
+        border: 2px dashed rgb(0, 0, 0);
+        border-radius: 5px;
+        color: white;
+        font-size: larger;
+        
+        
+        
+        
+
+
+    }
+    
