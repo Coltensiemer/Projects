@@ -18,6 +18,23 @@ body {
     
 }
 
+header {
+
+    text-align: center;
+    border-bottom: 3px black dashed;
+    border-top: 3px black dashed; 
+    background-color: rgb(201, 200, 200);
+}
+
+h1, .Direction-dot { 
+
+    text-align: center;
+    
+}
+
+.Direction-dot {
+    text-align: center;
+}
 /* edit */
 .navbar {  
     background-color: rgb(194, 189, 189); 
@@ -85,10 +102,11 @@ body {
     border: 4px dashed black;
     border-radius: 15px;
     
+    
 }
 
 .child-container { 
-    z-index: 2;
+    z-index: 1;
     background-color: rgb(51, 172, 212);
     height: 90px; 
     width:90px;
@@ -96,6 +114,9 @@ body {
     row-gap: 1rem;
     border: 3px dashed rgb(0, 0, 0);
     border-radius: 15px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-wrap: wrap;
     
 
 }
@@ -118,6 +139,23 @@ body {
         text-align: center;
     }
 
+    #Parent-Child-Contatiner {
+        background-color: rgb(172, 170, 167);
+        padding: 20px;
+        display: flex;
+        justify-self: center; 
+
+    }
+sx
+    .Parent-Child-Container-Photo { 
+
+        max-width: 300px;
+        max-height: 500px;
+        
+        left: 40px;
+        
+    }
+
 
 
     .Row-cols 
@@ -138,10 +176,10 @@ body {
         display: flex;
         flex-direction: column;
         margin: 10px;
-        max-height: 25vw; 
-        min-height: 25vw;
-        max-width: 25vw;
-        min-width: 25vw;
+        max-height: 40vw; 
+        min-height: 40vw;
+        max-width: 40vw;
+        min-width: 40vw;
         border: 4px dashed black;
         border-radius: 15px;
     
@@ -150,27 +188,36 @@ body {
 .child-container-E1, .child-container-E2, .child-container-E3, .child-container-E4 { 
         z-index: 1;
         background-color: rgb(51, 172, 212);
-        flex-shrink: 1;
-        height: 60px; 
-        max-width: 60px;
-        min-width: 60px;
+        flex-shrink: 0;
+        height: 10vw;; 
+        max-width: 10vw;
+        min-width: 10vw;
+        flex-wrap: wrap;
         margin: auto;
         row-gap: 1rem;
         border: 2px dashed rgb(0, 0, 0);
         border-radius: 5px;
         color: white;
         text-align: center;
+        font-size: larger;
+        
         
     }
 
-    #parent-container-E2,  #parent-container-E4
+    #parent-container-E2  
     {
         flex-direction: row;
+        
+    }
+
+    #parent-container-E4 {
+        flex-direction: row-reverse;
     }
   
-    
+    #parent-container-E3 { 
+        flex-direction: column-reverse;
+    }
 
         
-    
     
 
