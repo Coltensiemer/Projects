@@ -6,14 +6,13 @@ body {
     border-bottom: 4px dashed black;
     padding: 2%;
     text-align: center;
-   margin: 0;
     min-width: 100%;
-    max-width: 100%; 
+    max-width: 120%; 
+    width: 120vw;
     background-color:rgb(233, 193, 101);
     z-index: 999; 
     position:sticky;
     top: 0; 
-    left: 0; 
     
     
 }
@@ -26,10 +25,6 @@ header {
     z-index: 999;
 }
 
-
-
-
-
 /* edit */
 .navbar {  
     background-color: rgb(251, 249, 249); 
@@ -40,21 +35,22 @@ header {
     border: 2px black dashed; 
     height: 100%;
     top: 50px; 
-    margin-top: 30px; 
+    margin-top: 10px; 
+    margin-left: -10px; 
 
     
 }
 
 
-
 .FlexNav { 
 
- 
+    font-size: 16px;
+    font-weight: bold;
     border-right: none;
     padding: 20%;
- 
-    background-color: rgb(251, 249, 249);
+    background-color: rgb(255, 255, 255);
     text-align: center;
+    border-bottom: 2px black dashed;
 }
 
 .FlexNav:hover {
@@ -62,18 +58,30 @@ header {
     border: 3px black dashed;
 }
 
+.FlexNav1 { 
+    margin-top: 40px;
+    border-top: none;
+}
+.FlexNav6 {
+    border-bottom: none;
+}
+
+h1 { 
+    text-align: left;
+    font-weight: 800px;
+    font-size: larger;
+}
 
 #main-doc { 
     background-color: rgb(255, 255, 255);
-    top: 100px; 
+    top: -60px;
     position: relative; 
     display: block;
     flex-direction: column;
     padding: 30px;
     margin-left: 140px;
     margin-bottom: 110px; 
-    flex-wrap: nowrap;
-    top: 0; 
+    flex-wrap: nowrap; 
     z-index: -1;
 
 }
@@ -230,16 +238,18 @@ header {
 
     #Direction-Container2 {
         display: flex;
-        justify-content: start;
-        flex-direction: row;
+        justify-content: space-evenly;
+
         max-width: 100%;
         margin: 0;
         flex-wrap: wrap;
+
         
     }   
 
 
-    #parent-container-Just1, #parent-container-Just2, #parent-container-Just3, #parent-container-Just4, #parent-container-Just5 { 
+    #parent-container-Just1, #parent-container-Just2, #parent-container-Just3, #parent-container-Just4, #parent-container-Just5,
+    #parent-container-Just6{ 
         background-color: rgb(233, 193, 101);
         display: flex;
         max-height: 15vw; 
@@ -252,7 +262,7 @@ header {
     }
 
     #parent-container-Just1 {
-        justify-content: start inherit;
+        justify-content: start;
         
     }
 
@@ -269,6 +279,11 @@ header {
         justify-content: space-evenly;
     }
     
+     #parent-container-Just6 {
+        justify-content: end;
+
+
+    } 
 
     .child-container-E5,  .child-container-E6{
         z-index: 1;
@@ -281,8 +296,71 @@ header {
         border: 2px dashed rgb(0, 0, 0);
         border-radius: 5px;
         color: white;
-        
-        
+         
 
     }
     
+    #Direction-Container3 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 100%;
+        margin: 0;
+        flex-wrap: wrap;
+
+        
+    }   
+
+
+    #parent-container-Align1, #parent-container-Align2, #parent-container-Align3, #parent-container-Align4, #parent-container-Align5,
+    #parent-container-Align6{ 
+        background-color: rgb(233, 193, 101);
+        display: flex;
+        justify-content: column;
+        max-height: 15vw; 
+        min-height: 15vw;
+        max-width: 15vw;
+        min-width: 15vw;
+        border: 4px dashed black;
+        border-radius: 15px;
+
+    }
+
+    #parent-container-Align1 {
+    align-items: flex-start
+        
+    }
+
+    #parent-container-Align2 {
+        align-content: space-between;
+    }
+    #parent-container-Align3 {
+        align-items:  center; 
+    }
+    #parent-container-Align4 {
+        align-content: space-around;
+    }
+    #parent-container-Align5 {
+        align-items: flex-end;
+    }
+    
+     #parent-container-Align6 {
+        align-items:  center; 
+
+
+    } 
+
+    .child-container-E5,  .child-container-E6{
+        z-index: 1;
+        background-color: rgb(51, 172, 212);
+        flex-shrink: 0;
+        height: 3vw;; 
+        max-width: 3vw;
+        min-width: 3vw;
+        flex-wrap: wrap;
+        border: 2px dashed rgb(0, 0, 0);
+        border-radius: 5px;
+        color: white;
+         
+
+    }

@@ -26,7 +26,7 @@
         <div class="FlexNav4 FlexNav">Flex Alignment </div>
         <p></p>
         <div class="FlexNav5 FlexNav">Additional Examples</div>
-        <div class="FlexNav5 FlexNav">Resources</div>
+        <div class="FlexNav6 FlexNav">Resources</div>
         <!-- Add more info -->
     </nav>
 
@@ -80,7 +80,6 @@
                     </div>
                 </div>
 
-                To start using flex, the parent container needs to be changed to [display:flex;]. <br>
 
                 <!-- <div id="Code-Container"> -->
 
@@ -120,7 +119,7 @@
                     <br><br>
                 <h1>The Flex Directions</h1>
 
-                </ul>
+            
                 <div id="Direction-Container">
                     <ul>
                         <li> Column
@@ -172,17 +171,17 @@
         <section class="main-section" id="Flex_Responsive">
             <header class="headernav">Flex Alignment </header>
             <article>
-                <p> Once the parents elements are containing the children elements, and the 'flex-direction' is choosen,
-                    next to Flex-Alignment. A lot of the time, margins are used to align elements. A more powerful way
+                <p> Once the parents elements are containing the children elements 
+                    then Flex-Justify-Content and Align-Items will be used. A lot of the time, margins are used to align elements. A more powerful way
                     is with 'Flex-Alignment' to aling block items within a container.
                     <br><br>
-                    So what is Flex-Alignment?
+                    So what is Justify-Content and Flex-Alignment?
                     <br><br>
-                    Flex aligment is a way to move the position of the items inside a container vertical or horizontal. 
+                    Justify Contents a way to move the position of the items inside a container on the main axis.  
 
                 </p>
 
-            
+                <h1> Justify-Container</h1>
                 <div id="Direction-Container2">
                     <ul>
                         <li> Start
@@ -191,7 +190,20 @@
                                 <div class="child-container-E5">2</div>
                                 <div class="child-container-E5">3</div>
                             </div>
+                        <p> All items are starting on <br> on the main axis.
+                        </p>
                         </li>
+                        <li> Space Betwen
+                            <div id="parent-container-Just3">
+                                <div class="child-container-E5">1</div>
+                                <div class="child-container-E5">2</div>
+                                <div class="child-container-E5">3</div>
+                            </div>
+                        </li>
+                    
+                    </ul>
+                    <ul>
+                    
                         <li> Center
 
                             <div id="parent-container-Just2">
@@ -199,20 +211,11 @@
                                 <div class="child-container-E5">2</div>
                                 <div class="child-container-E5">3</div>
                             </div>
-                            <!-- <p> Row alings the children items from left to right in a single line </p> -->
+                    <p> All items are center<br>in on main axis. </p>
 
                         </li>
-                    </ul>
-                    <ul>
-                        <li> Space-around
-                            <div id="parent-container-Just3">
-                                <div class="child-container-E5">1</div>
-                                <div class="child-container-E5">2</div>
-                                <div class="child-container-E5">3</div>
-                            </div>
-                        </li>
 
-                        <li> Space-Around
+                        <li> Space Around
                             <div id="parent-container-Just4">
                                 <div class="child-container-E5">1</div>
                                 <div class="child-container-E5">2 </div>
@@ -221,15 +224,68 @@
                         </li>
                     </ul>
                     <ul>
-                            <li> Space-Evenly
+                        <li> End
+                            <div id="parent-container-Just6">
+                                <div class="child-container-E5">1</div>
+                                <div class="child-container-E5">2 </div>
+                                <div class="child-container-E5">3</div>
+                            </div>
+                            <p> All items are ending on the right <br> on the main axis. </p>
+                        </li>
+                            <li> Space Evenly
                                 <div id="parent-container-Just5">
                                     <div class="child-container-E5">1</div>
                                     <div class="child-container-E5">2 </div>
                                     <div class="child-container-E5">3</div>
                                 </div>
+                                <p>The items are all have even space <br> evenly on all sides. </p>
+                            </li>
+    
+                           
                             </li>
                         </ul>
                     </div>
+
+                    <h1> Align Items</h1>
+                    <div id="Direction-Container3">
+                        <ul>
+                            <li> Start
+                                <div id="parent-container-Align1">
+                                    <div class="child-container-E5">1</div>
+                                    <div class="child-container-E5">2</div>
+                                    <div class="child-container-E5">3</div>
+                                </div>
+                            <p> All items are starting on <br> on the cross axis.
+                            </p>
+                        </ul>
+                        <ul>
+                        
+                            <li> Center
+    
+                                <div id="parent-container-Align3">
+                                    <div class="child-container-E5">1</div>
+                                    <div class="child-container-E5">2</div>
+                                    <div class="child-container-E5">3</div>
+                                </div>
+                        <p> All items are center<br>in on cross axis. </p>
+    
+                            </li>
+    
+                        </ul>
+                        <ul>
+                            <li> End
+                                <div id="parent-container-Align5">
+                                    <div class="child-container-E5">1</div>
+                                    <div class="child-container-E5">2 </div>
+                                    <div class="child-container-E5">3</div>
+                                </div>
+                                <p>All items are at end <br> at the cross axis. </p>
+                               
+                                </li>
+                            </ul>
+                        </div>
+    
+                    
 
             </article>
         </section>
