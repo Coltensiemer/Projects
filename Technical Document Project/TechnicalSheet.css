@@ -1,5 +1,6 @@
 body {
     background-color: white;
+    margin: 0;
 }
 
 
@@ -7,15 +8,15 @@ body {
 .Header { 
     border-bottom: 4px dashed black;
     padding: 2%;
-    text-align: center;
-    min-width: 100%;
-    max-width: 120%; 
-    width: 120vw;
+    text-align: left;
+    min-width: 25%;
+    max-width: 25%; 
+    max-height: 45px;
+    min-height: 45px;
     background-color:rgb(233, 193, 101);
     z-index: 999; 
-    position:sticky;
+    position:fixed;
     top: 0; 
-    
     
 }
 
@@ -30,6 +31,7 @@ header {
     border: 2px black dashed; 
     background-color: rgb(201, 200, 200);
     z-index: 999;
+    width: 100%;
 }
 
 /* edit */
@@ -41,9 +43,12 @@ header {
     position: fixed; 
     border: 2px black dashed; 
     height: 100%;
-    top: 50px; 
-    margin-top: 10px; 
+    top: 60px; 
+    
     margin-left: -10px; 
+    border-top: none; 
+    
+    
 
     
 }
@@ -58,16 +63,17 @@ header {
     background-color: rgb(255, 255, 255);
     text-align: center;
     border-bottom: 2px black dashed;
+    padding-top: 60px;
+    
 }
 
 .FlexNav:hover {
     background-color: rgb(51, 172, 212);
-    border: 3px black dashed;
+    border: 3px black solid;
     color: white;
 }
 
 .FlexNav1 { 
-    margin-top: 40px;
     border-top: none;
 }
 .FlexNav6 {
@@ -251,6 +257,7 @@ h1 {
         max-width: 100%;
         margin: 0;
         flex-wrap: wrap;
+        overflow:visible
 
         
     }   
