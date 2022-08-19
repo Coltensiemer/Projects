@@ -7,67 +7,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox Learning</title>
     <link rel="Stylesheet" href="TechnicalSheet.css">
-
 </head>
 
-<body></body>
-<nav id="navbar">
-    <header>
-    </header>
+<body>
+<nav class="navbar">
     <header class="Header"> Flexbox For Beginners </header>
-    <nav class="navbar">
-        <a class="FlexNav1 FlexNav" href="#Introduction">Introduction</a>
-        <p></p>
-        <a class="FlexNav2 FlexNav" href="#Parent_Container">Containers</a>
-        <p></p>
-        <a class="FlexNav3 FlexNav" href="#Flex_Items">Flex Direction</a>
-        
-        <p></p>
-        <a class="FlexNav4 FlexNav" href="#Flex_Responsive">Flex Alignment </a>
-        <p></p>
-        <a class="FlexNav5 FlexNav" href="#Additional Examples">Additional Examples</a>
-        <a class="FlexNav6 FlexNav" href="#Resources">Resources</a>
+        <a class="FlexNav1 FlexNav nav-link" href="#Introduction">Introduction</a>
+        <a class="FlexNav2 FlexNav nav-link" href="#Container">Containers</a>
+        <a class="FlexNav3 FlexNav nav-link" href="#Flex_Direction">Flex Direction</a>
+        <a class="FlexNav4 FlexNav nav-link" href="#Flex_Alignment">Flex Alignment </a>
+        <a class="FlexNav5 FlexNav nav-link" href="#Additional Examples">Additional Examples</a>
+        <a class="FlexNav6 FlexNav nav-link" href="#Resources">Resources</a>
         <!-- Add more info -->
-    </nav>
 
-
-    <main id="main-doc">
-        <section class="main-section" id="Introduction">
-            <header class="headernav">Introduction</header>
-            <article>
-                <p>
-                    Created for CSS (Cascading Style Sheets) user interface desgin,
-                    flexbox was created as another way to adjust rows and columns in a more efficient way. This box
-                    model design allows to make adjustments to
-                    height, width, gap spacing, and other items inside of a container. This works for using nested
-                    elements inside a parent element (container) to lay out childern elements in rows or columns.
-                    Flexbox is also responsive so it can adjust to different media types.</p>
-
-                <p> This document will tech the principle of Flexbox and how to create 'Flex-Direction' and
-                    'Flex-alignment'. </p>
-
-                <h1>What you should know up to this point</h1>
-                <P>Flexbox is a great tool to shape containers in your webpage on CSS.
-                    Having the foundemental understanding of HTML (Hypertext Markup Language) and CSS is needed before
-                    one can learn flexbox. <br>
-                </P>
-
-            </article>
-        </section>
-        <section class="main-section" id="Parent_Container">
-            <header class="headernav">Containers</header>
-            <article>
-
-                <p>
-                    When using flexbox, it is important to understand the parent-child dynamics. <br><br>
-                    The <b>Parent</b> will be the main container which contains direct descendance - known as the
-                    <b>Child </b> container. Any
-                    elements of <bold>direct</bold> relationship to the parent will have their layouts effected inside
-                    the container. <br>
-                    This excludes 'grand-children' - non direct descendance. <br><br>
-
-
-                <div Id="parent-container">
+</nav>
+<main id="main-doc">
+    <section class="main-section" id="Introduction">
+        <header class="headernav">Introduction</header>
+        <article>
+            <p>
+                Created for CSS (Cascading Style Sheets) user interface design,
+                flexbox was created as another way to adjust rows and columns in a more efficient way. This box
+                model design allows to make adjustments to
+                height, width, gap spacing, and other items inside of a container. This works for using nested
+                elements inside a parent element (container) to lay out children elements in rows or columns.
+                Flexbox is also responsive so it can adjust to different media types.</p>
+            <p> This document will tech the principle of Flexbox and how to create 'Flex-Direction' and
+                'Flex-alignment'. </p>
+            <h1>What you should know up to this point</h1>
+            <P>Flexbox is a great tool to shape containers in your webpage on CSS.
+                Having the fundamental understanding of HTML (Hypertext Markup Language) and CSS is needed before
+                one can learn flexbox. <br>
+            </P>
+        </article>
+    </section>
+    <section class="main-section" id="Container">
+        <header class="headernav">Container</header>
+        <article>
+            <p>
+                When using flexbox, it is important to understand the parent-child dynamics. <br><br>
+                The <b>Parent</b> will be the main container which contains direct descendance - known as the
+                <b>Child </b> container. Any
+                elements of <bold>direct</bold> relationship to the parent will have their layouts effected inside
+                the container. <br>
+                This excludes 'grand-children' - non direct descendance. <br><br>
+                <div id="parent-container">
                     <h5 class="container-text"> Parent Container</h5>
                     <div class="child-container">
                         <h5 class="container-text-child"> Child Container</h5>
@@ -79,43 +63,33 @@
                         <h5 class="container-text-child"> Child Container</h5>
                     </div>
                 </div>
-
-
-              
-
-
                 <h1> Children Items</h1>
                 <p> A child <b>item</b>, or known as child <b> element </b>is what is directly connected to the parent.
                     <br>
-
-
                     To create a child element, there needs to be an element nested inside the parent in HTML. <br>
-
-                   
                 </p>
+        </article>
+    </section>
+    <section class="main-section" id="Flex_Direction">
+        <header class="headernav">Flex Direction</header>
+        <article>
 
-            </article>
-        </section>
-        <section class="main-section" id="Flex_Items">
-            <header class="headernav">Flex Direction</header>
-            <article>
+            <p>FlexBox works by allowing the children items in the container to be established on two different
+                axis. <br><br>
 
-                <p>FlexBox works by allowing the children items in the container to be established on two different
-                    axis. <br><br>
+                Flex direction is an part of how child items are placed inside the parent container. There are
+                multiple different properties that effect the direction of the flex box itself.
+                <br><br>
+                in order to establish the flex-direction the parent container needs to have the property set to <b>
+                    Flex-Direction</b> while the values will establish the direction of the flexbox items.
+                <br><br>
+                Values: <span>
+                    <b> Column</b> | <b>Row</b> | <b>Column-Reverse</b> | <b>Row-Reverse </b></span>
 
-                    Flex direction is an part of how child items are placed inside the parent container. There are
-                    multiple different properties that effect the direction of the flex box itself.
-                    <br><br>
-                    in order to establish the flex-direction the parent container needs to have the property set to <b>
-                        Flex-Direction</b> while the values will establish the direction of the flexbox items.
-                    <br><br>
-                    Values: <span>
-                        <b> Column</b> | <b>Row</b> | <b>Column-Reverse</b> | <b>Row-Reverse </b></span>
-
-                    <br><br>
+                <br><br>
                 <h1>The Flex Directions</h1>
 
-            
+
                 <div id="Direction-Container">
                     <ul>
                         <li> Column
@@ -162,151 +136,162 @@
                     original flex-direction. <br><br>
                     These are created by a <b>[Flex-Direction: Column | Row | Column-Reverse | Row-Reverse;]</b>
                     in CSS </p>
-            </article>
-        </section>
-        <section class="main-section" id="Flex_Responsive">
-            <header class="headernav">Flex Alignment </header>
-            <article>
-                <p> Once the parents elements are containing the children elements 
-                    then Flex-Justify-Content and Align-Items will be used. A lot of the time, margins are used to align elements. A more powerful way
-                    is with 'Flex-Alignment' to aling block items within a container.
-                    <br><br>
-                    So what is Justify-Content and Flex-Alignment?
-                    <br><br>
-                    Justify Contents a way to move the position of the items inside a container on the main axis.  
+        </article>
+    </section>
+    <section class="main-section" id="Flex_Alignment">
+        <header class="headernav">Flex Alignment</header>
+        <article>
+            <p> Once the parents elements are containing the children elements
+                then Flex-Justify-Content and Align-Items will be used. A lot of the time, margins are used to align
+                elements. A more powerful way
+                is with 'Flex-Alignment' to aling block items within a container.
+                <br><br>
+                So what is Flex-Alignment?
+            </p>
+            <div id="axis-photo">
+                <img src="images/cross-and-main.JPG" id="cross-main-pic">
+                <p>
+                <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-flexbox-properties"
+                        target="_blank" class="cross-main-link"> (Image provide from CSS-tricks.com)</a>
 
-                </p>
+            <p>Looking at the diagram above, there are two axises in <span class="Red-Axis">red</span>. There is the Main Axis that is going left to right
+            </p> 
+        </div>
 
-                <h1> Justify-Container</h1>
-                <div id="Direction-Container2">
-                    <ul>
-                        <li> Start
-                            <div id="parent-container-Just1">
-                                <div class="child-container-E5">1</div>
-                                <div class="child-container-E5">2</div>
-                                <div class="child-container-E5">3</div>
-                            </div>
+            <h1> Justify-Container</h1>
+            <p>
+                Justify Contents a way to move the position of the items inside a container on the main axis.
+            </p>
+            <div id="Direction-Container2">
+                <ul>
+                    <li> Start
+                        <div id="parent-container-Just1">
+                            <div class="child-container-E5">1</div>
+                            <div class="child-container-E5">2</div>
+                            <div class="child-container-E5">3</div>
+                        </div>
                         <p> All items are starting on <br> on the main axis.
                         </p>
-                        </li>
-                        <li> Space Betwen
-                            <div id="parent-container-Just3">
-                                <div class="child-container-E5">1</div>
-                                <div class="child-container-E5">2</div>
-                                <div class="child-container-E5">3</div>
-                            </div>
-                        </li>
-                    
-                    </ul>
-                    <ul>
-                    
-                        <li> Center
-
-                            <div id="parent-container-Just2">
-                                <div class="child-container-E5">1</div>
-                                <div class="child-container-E5">2</div>
-                                <div class="child-container-E5">3</div>
-                            </div>
-                    <p> All items are center<br>in on main axis. </p>
-
-                        </li>
-
-                        <li> Space Around
-                            <div id="parent-container-Just4">
-                                <div class="child-container-E5">1</div>
-                                <div class="child-container-E5">2 </div>
-                                <div class="child-container-E5">3</div>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li> End
-                            <div id="parent-container-Just6">
-                                <div class="child-container-E5">1</div>
-                                <div class="child-container-E5">2 </div>
-                                <div class="child-container-E5">3</div>
-                            </div>
-                            <p> All items are ending on the right <br> on the main axis. </p>
-                        </li>
-                            <li> Space Evenly
-                                <div id="parent-container-Just5">
-                                    <div class="child-container-E5">1</div>
-                                    <div class="child-container-E5">2 </div>
-                                    <div class="child-container-E5">3</div>
-                                </div>
-                                <p>The items are all have even space <br> evenly on all sides. </p>
-                            </li>
-    
-                           
-                            </li>
-                        </ul>
-                    </div>
-
-                    <h1> Align Items</h1>
-                    <div id="Direction-Container3">
-                        <ul>
-                            <li> Start
-                                <div id="parent-container-Align1">
-                                    <div class="child-container-E5">1</div>
-                                    <div class="child-container-E5">2</div>
-                                    <div class="child-container-E5">3</div>
-                                </div>
-                            <p> All items are starting on <br> on the cross axis.
-                            </p>
-                        </ul>
-                        <ul>
-                        
-                            <li> Center
-    
-                                <div id="parent-container-Align3">
-                                    <div class="child-container-E5">1</div>
-                                    <div class="child-container-E5">2</div>
-                                    <div class="child-container-E5">3</div>
-                                </div>
-                        <p> All items are center<br>in on cross axis. </p>
-    
-                            </li>
-    
-                        </ul>
-                        <ul>
-                            <li> End
-                                <div id="parent-container-Align5">
-                                    <div class="child-container-E5">1</div>
-                                    <div class="child-container-E5">2 </div>
-                                    <div class="child-container-E5">3</div>
-                                </div>
-                                <p>All items are at end <br> at the cross axis. </p>
-                               
-                                </li>
-                            </ul>
-                        </div>
-    
-                    
-
-            </article>
-        </section>
-
-        <section></section>
-            <header id="Additional Examples">Additional Examples</header>
-            <article>
-
-            </article>
-
-        <section class="main-section" id="Resources">
-            <header class="headernav">Resources</header>
-            <article>
-                <p>Check out these different resources to learn more about flex box!</p>
-                <ul>
-                    <li>
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content" target="_blank">Developer Mozilla org</Developer></a>
                     </li>
-                    <li>
-                        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-flexbox-properties" target="_blank">CSS-tricks.com</a>
+                    <li> Space Betwen
+                        <div id="parent-container-Just3">
+                            <div class="child-container-E5">1</div>
+                            <div class="child-container-E5">2</div>
+                            <div class="child-container-E5">3</div>
+                        </div>
+                    </li>
+
+                </ul>
+                <ul>
+
+                    <li> Center
+
+                        <div id="parent-container-Just2">
+                            <div class="child-container-E5">1</div>
+                            <div class="child-container-E5">2</div>
+                            <div class="child-container-E5">3</div>
+                        </div>
+                        <p> All items are center<br>in on main axis. </p>
+
+                    </li>
+
+                    <li> Space Around
+                        <div id="parent-container-Just4">
+                            <div class="child-container-E5">1</div>
+                            <div class="child-container-E5">2 </div>
+                            <div class="child-container-E5">3</div>
+                        </div>
                     </li>
                 </ul>
-            </article>
-        </section>
+                <ul>
+                    <li> End
+                        <div id="parent-container-Just6">
+                            <div class="child-container-E5">1</div>
+                            <div class="child-container-E5">2 </div>
+                            <div class="child-container-E5">3</div>
+                        </div>
+                        <p> All items are ending on the right <br> on the main axis. </p>
+                    </li>
+                    <li> Space Evenly
+                        <div id="parent-container-Just5">
+                            <div class="child-container-E5">1</div>
+                            <div class="child-container-E5">2 </div>
+                            <div class="child-container-E5">3</div>
+                        </div>
+                        <p>The items are all have even space <br> evenly on all sides. </p>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+            <h1> Align Items</h1>
+            <div id="Direction-Container3">
+                <ul>
+                    <li> Start
+                        <div id="parent-container-Align1">
+                            <div class="child-container-E5">1</div>
+                            <div class="child-container-E5">2</div>
+                            <div class="child-container-E5">3</div>
+                        </div>
+                        <p> All items are starting on <br> on the cross axis.
+                        </p>
+                </ul>
+                <ul>
 
-    </main>
+                    <li> Center
+
+                        <div id="parent-container-Align3">
+                            <div class="child-container-E5">1</div>
+                            <div class="child-container-E5">2</div>
+                            <div class="child-container-E5">3</div>
+                        </div>
+                        <p> All items are center<br>in on cross axis. </p>
+
+                    </li>
+
+                </ul>
+                <ul>
+                    <li> End
+                        <div id="parent-container-Align5">
+                            <div class="child-container-E5">1</div>
+                            <div class="child-container-E5">2 </div>
+                            <div class="child-container-E5">3</div>
+                        </div>
+                        <p>All items are at end <br> at the cross axis. </p>
+
+                    </li>
+                </ul>
+            </div>
+
+
+
+        </article>
+    </section>
+
+    <section class="main-section" id="Additional_Examples">
+        <header class="headernav">Additional Examples</header>
+        <article>
+
+        </article>
+    </section>
+
+    <section class="main-section" id="Resources">
+        <header class="headernav">Resources</header>
+        <article>
+            <p>Check out these different resources to learn more about flex box!</p>
+            <ul>
+                <li>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content" target="_blank">Developer
+                        Mozilla org</a>
+                </li>
+                <li>
+                    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-flexbox-properties"
+                        target="_blank">CSS-tricks.com</a>
+                </li>
+            </ul>
+        </article>
+    </section>
+
+</main>
+</body>
 
 </html>
