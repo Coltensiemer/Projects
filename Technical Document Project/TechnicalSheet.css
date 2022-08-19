@@ -2,6 +2,8 @@ body {
     background-color: white;
 }
 
+
+/* fix header */ 
 .Header { 
     border-bottom: 4px dashed black;
     padding: 2%;
@@ -15,6 +17,11 @@ body {
     top: 0; 
     
     
+}
+
+nav > a { 
+    color: black;
+    text-decoration: none;
 }
 
 header {
@@ -56,6 +63,7 @@ header {
 .FlexNav:hover {
     background-color: rgb(51, 172, 212);
     border: 3px black dashed;
+    color: white;
 }
 
 .FlexNav1 { 
