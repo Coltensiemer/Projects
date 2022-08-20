@@ -1,3 +1,12 @@
+@media (max-width: 500px) {
+    .navbar
+{width: 30%;
+}
+}
+
+
+
+
 
 
 /* fix header */ 
@@ -25,15 +34,12 @@ nav > a {
     background-color: rgb(201, 200, 200); 
     display: flex;
     flex-direction: column; 
-    max-width: 200%;
+    max-width: 150%;
     position: fixed; 
     border: 2px black dashed; 
     height: 100%;
-    
-
     margin-left: -10px; 
     border-top: none; 
-    
     
 }
 
@@ -49,7 +55,7 @@ nav > a {
     text-align: center;
     border-bottom: 2px black dashed;
     margin-top: 20px;
-   
+    overflow: hidden;
     
 }
 
@@ -74,11 +80,13 @@ header {
     background-color: rgb(201, 200, 200);
     z-index: 999;
     width: 100%;
+    overflow: hidden;
 }
 h1 { 
     text-align: left;
     font-weight: 800px;
     font-size: larger;
+
 }
 
 #main-doc { 
@@ -112,11 +120,12 @@ h1 {
     margin: 20px auto;
     max-height: 300px; 
     min-height: 300px;
-    max-width: 50vw;
-    min-width: 50vw;
+    max-width: 60vw;
+    min-width: 20%;
     border: 4px dashed black;
     border-radius: 15px;
     flex-shrink: 1;
+    overflow: hidden;
     
     
 }
@@ -130,8 +139,6 @@ h1 {
     row-gap: 1rem;
     border: 3px dashed rgb(0, 0, 0);
     border-radius: 15px;
-    flex-shrink: 1;
-    flex-grow: 0;
     flex-wrap: wrap;
     
 
@@ -220,6 +227,8 @@ h1 {
         height: 200px;
         width: 200px;
     }
+
+   
     
     #Direction-Container {
         background-color: rgb(255, 255, 255);
@@ -229,6 +238,11 @@ h1 {
         max-width: 100%;
         margin: 0;
         flex-wrap: wrap;
+        
+        @media screen {
+            
+        }
+        
     }   
 
 
