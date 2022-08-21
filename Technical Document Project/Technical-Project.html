@@ -25,19 +25,20 @@
         <section class="main-section" id="Introduction">
             <header class="headernav">Introduction</header>
             <article>
+                <h1> What is Flexbox?</h1>
                 <p>
-                    Created for CSS (Cascading Style Sheets) user interface design,
-                    flexbox was created as another way to adjust rows and columns in a more efficient way. This box
+                    Design for CSS (Cascading Style Sheets) user's interface, 
+                    flexbox was created to adjust rows and columns in a more efficient way. This box
                     model design allows to make adjustments to
                     height, width, gap spacing, and other items inside of a container. This works for using nested
                     elements inside a parent element (container) to lay out children elements in rows or columns.
-                    Flexbox is also responsive so it can adjust to different media types.</p>
-                <p> This document will tech the principle of Flexbox and how to create 'Flex-Direction' and
+                    Flexbox is also responsive so it can adjust to different media types and screen sizes.</p>
+                <p> This document will tech the principle of Flexbox and how to create 'Flex-Direction' and using
                     'Flex-alignment'. </p>
                 <h1>What you should know up to this point</h1>
                 <P>Flexbox is a great tool to shape containers in your webpage on CSS.
                     Having the fundamental understanding of HTML (Hypertext Markup Language) and CSS is needed before
-                    one can learn flexbox. <br>
+                    learning flexbox. <br>
                 </P>
             </article>
         </section>
@@ -52,6 +53,8 @@
                     the container. <br>
                     This excludes 'grand-children' - non direct descendance. <br><br>
 
+                    Seen here is an example of a parent container with there direct child elements.
+                    <div>
                     <div id="parent-container">
                         <h5 class="container-text"> Parent Container</h5>
                         <div class="child-container">
@@ -64,8 +67,9 @@
                             <h5 class="container-text-child"> Child Container</h5>
                         </div>
                     </div>
+    
                     <div id="Background-of-parent">
-                        <code> <span class="DarkBlue">div</span>
+                        <code class="code1"> <span class="DarkBlue">div</span>
                             <span class="LightBlue">id=</span>
                             <span class="Orange">"Parent-Container"</span><br>
                             &nbsp; <span class="DarkBlue">div</span>
@@ -79,6 +83,7 @@
                             <span class="Orange">"Child-Container"</span><br>
                         </code>
                     </div>
+                </div>
                     <h1> Children Items</h1>
                     <p> A child <b>item</b>, or known as child <b> element </b>is what is directly connected to the
                         parent.
@@ -183,8 +188,8 @@
                     Justify Contents a way to move the position of the items inside a container on the main axis.
                 </p>
                 <div id="Direction-Container2">
-                    <ul>
-                        <li> Space Betwen
+                    
+                        <li> Space Between
                             <div id="parent-container-Just3">
                                 <div class="child-container-E5">1</div>
                                 <div class="child-container-E5">2</div>
@@ -194,21 +199,17 @@
                                 are in the sides while container <b> two</b> <br> is in the middle. </p>
                         </li>
 
-                    </ul>
-                    <ul>
-
+                    
                         <li> Space Around
                             <div id="parent-container-Just4">
                                 <div class="child-container-E5">1</div>
                                 <div class="child-container-E5">2 </div>
                                 <div class="child-container-E5">3</div>
                             </div>
-                            <P> There is even spacing between <br> all child containers and the <br> parent inner edges.
-                            </P>
+                            <p> There is even spacing between <br> all child containers and the <br> parent inner edges.
+                            </p>
                         </li>
-                    </ul>
-                    <ul>
-
+                  
                         <li> Space Evenly
                             <div id="parent-container-Just5">
                                 <div class="child-container-E5">1</div>
@@ -217,13 +218,11 @@
                             </div>
                             <p>The items are all have even space <br> evenly on all sides. </p>
                         </li>
-                        </li>
-                    </ul>
                 </div>
                 <h1> Align Items</h1>
-                <P>To note -these are marked with a flex-direction of row.
+                <p>To note -these are marked with a flex-direction of row.
                     <div id="Direction-Container3">
-                        <ul>
+                    
                             <li> Start
                                 <div id="parent-container-Align1">
                                     <div class="child-container-E5">1</div>
@@ -232,6 +231,7 @@
                                 </div>
                                 <p> All items are starting on <br> on the cross axis.
                                 </p>
+                            </li>
                             <li> Start
                                 <div id="parent-container-Just1">
                                     <div class="child-container-E5">1</div>
@@ -241,8 +241,8 @@
                                 <p> All items are starting on <br> on the main axis.
                                 </p>
                             </li>
-                        </ul>
-                        <ul>
+        
+                        
 
                             <li> Center
 
@@ -265,8 +265,8 @@
 
                             </li>
 
-                        </ul>
-                        <ul>
+                    
+                    
                             <li> End
                                 <div id="parent-container-Align5">
                                     <div class="child-container-EE">1</div>
@@ -283,7 +283,7 @@
                                 </div>
                                 <p> All items are ending on the right <br> on the main axis. </p>
                             </li>
-                        </ul>
+        
                     </div>
 
 
@@ -306,8 +306,8 @@
                                 <div>
                         </li>
                         <div id="Background-of-parent2">
-                        <code><span class="LightBlue">Flex-Direction:</span> <span class="Orange"> Column; </span> <br>
-                                <span class="LightBlue" >Justify-Content: </span><span class="Orange">Space-Between</span> 
+                        <code class="code2"><span class="LightBlue">Flex-Direction:</span> <span class="Orange"> Column; </span> <br>
+                                <span class="LightBlue" >Justify-Content: </span><span class="Orange">Space-Between</span> <br><br>
                         </code>
                         </div>
                     </ul>
@@ -320,8 +320,8 @@
                         <div>
                         </li> 
                         <div id="Background-of-parent2">
-                        <code><span class="LightBlue">Flex-Direction:</span> <span class="Orange"> Row-Reverse </span> <br>
-                            <span class="LightBlue" >Justify-Content: </span><span class="Orange">Space-Around</span> 
+                        <code class="code2"><span class="LightBlue">Flex-Direction:</span> <span class="Orange"> Row-Reverse </span> <br>
+                            <span class="LightBlue" >Justify-Content: </span><span class="Orange">Space-Around</span> <br><br>
                         </div>
                         </code>
                      </ul>
@@ -334,7 +334,7 @@
                                         <div>
                                         </li> 
                                         <div id="Background-of-parent2">
-                      <code><span class="LightBlue">Flex-Direction:</span> <span class="Orange"> Column-Reverse</span> <br>
+                      <code class="code2"><span class="LightBlue">Flex-Direction:</span> <span class="Orange"> Column-Reverse</span> <br>
                              <span class="LightBlue" >Justify-Content: </span><span class="Orange">Space-Evenly </span> <br>
                              <span class="LightBlue" >Align-items </span><span class="Orange">Center</span>
                      </code>

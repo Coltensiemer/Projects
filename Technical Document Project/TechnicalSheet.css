@@ -1,12 +1,19 @@
-@media (max-width: 500px) {
-    #navbar
-{width: 25%;
+@media (max-width: 700px) {
+    #navbar 
+{width: 20%;} 
+
 }
+
+@media screen (max-width: 700px) {
+    .FlexNav {font-size: 10px}
 }
 
 
 
 
+body { 
+    background-color: rgb(255, 255, 255);
+}
 
 
 /* fix header */ 
@@ -16,9 +23,12 @@
     text-align: center;
     width: 100%; 
     height: 50px;
-    background-color:rgb(233, 193, 101);
+    background-color:rgb(51, 172, 212);
+    color: white;
+    font-size: 16px; 
     position: static;
     margin-top: -10px;
+    margin-right: -10px; 
     font-weight: 600;
     overflow: hidden;
     
@@ -53,26 +63,20 @@ nav > a {
     font-weight: bold;
     border-right: none;
     padding: 20%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(51, 172, 212);
+    color: white;
     text-align: center;
-    border-bottom: 2px black dashed;
+    border: 2px black dashed;
     margin-top: 20px;
     overflow: hidden;
     
 }
 
 .FlexNav:hover {
-    background-color: rgb(51, 172, 212);
+    background-color: white;
     border: 3px black solid;
-    color: white;
+    color: black; 
     
-}
-
-.FlexNav1 { 
-    border-top: none;
-}
-.FlexNav6 {
-    border-bottom: none;
 }
 
 header {
@@ -166,11 +170,6 @@ h1 {
         text-align: center;
     }
 
-    code { 
-        position: relative;
-        left: 15%; 
-        flex-wrap: wrap;  
-    }
 
     .DarkBlue {color: blue;
     font-weight: 800;}
@@ -225,12 +224,9 @@ h1 {
 
     #parent-container-E2  
     {
-        flex-direction: row;
-       
+        flex-direction: row;  
         
     }
-
-
 
     #parent-container-E4 {
         flex-direction: row-reverse;
@@ -259,18 +255,18 @@ h1 {
     li {
         
         list-style-type: none;
-        text-align: center;
         margin: 40px;
         font-size: larger;
     }
 
     #Direction-Container2 {
         display: flex;
+        text-decoration: row;
         justify-content: space-evenly;
         margin-top: 50px;
         max-width: 100%;
         flex-wrap: wrap;
-        overflow:visible
+        overflow:visible;
     }   
     #cross-main-pic { width: 500px;
         position: relative;
@@ -386,19 +382,18 @@ h1 {
         color: white;
     }
 
-    a:-webkit-any-link { cursor: pointer; }
-
     #Background-of-parent { 
 
         background-color: rgb(245, 240, 245);
         max-width: 300px;
-        min-width: 50px;
         position: relative;
-        left: 35%;
+        display: block;
+        left: 25%;
         padding: 15px; 
         border-radius: 5px;
-        border: 1px black dashed;   
+        border: 1px black dashed;  
     }
+
 
    #Parent-Example1, #Parent-Example2, #Parent-Example3  { 
     background-color: rgb(233, 193, 101);
@@ -409,6 +404,7 @@ h1 {
     min-width: 15vw;
     border: 4px dashed black;
     border-radius: 15px;
+    overflow: hidden;
 
    }
 
@@ -428,6 +424,7 @@ h1 {
    #Parent-Example1 { 
     flex-direction: column; 
     justify-content: space-between;
+    overflow: hidden;
    }
 
    #Parent-Example2 { 
@@ -439,18 +436,19 @@ h1 {
     flex-direction: column-reverse;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 55px;
+
 }
 
 #Background-of-parent2 { 
 
     background-color: rgb(245, 240, 245);
-    max-width: 300px;
-    min-width: 50px;
+    max-width: 500px;
     position: relative;
-    padding: 15px; 
+    padding: 20px; 
     border-radius: 5px;
-    border: 1px black dashed;   
+    border: 1px black dashed;  
+    overflow: hidden;
+    display: block;
 }
 
 
