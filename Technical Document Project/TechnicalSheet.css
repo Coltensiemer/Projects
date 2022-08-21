@@ -1,6 +1,6 @@
 @media (max-width: 500px) {
-    .navbar
-{width: 30%;
+    #navbar
+{width: 25%;
 }
 }
 
@@ -20,6 +20,7 @@
     position: static;
     margin-top: -10px;
     font-weight: 600;
+    overflow: hidden;
     
   
     
@@ -31,7 +32,7 @@ nav > a {
 }
 
 #navbar {  
-    background-color: rgb(201, 200, 200); 
+    background-color: rgb(233, 193, 101); 
     display: flex;
     flex-direction: column; 
     max-width: 150%;
@@ -40,6 +41,7 @@ nav > a {
     height: 100%;
     margin-left: -10px; 
     border-top: none; 
+
     
 }
 
@@ -164,6 +166,21 @@ h1 {
         text-align: center;
     }
 
+    code { 
+        position: relative;
+        left: 15%; 
+        flex-wrap: wrap;  
+    }
+
+    .DarkBlue {color: blue;
+    font-weight: 800;}
+
+    .LightBlue {color: rgb(100, 149, 165);
+        font-weight: 800;}
+
+    .Orange {color: rgb(202, 133, 4);
+         font-weight: 800;}
+
 
 
 #parent-container-E1,  #parent-container-E2,  #parent-container-E3,  #parent-container-E4
@@ -176,7 +193,7 @@ h1 {
         flex-direction: column;
         margin-bottom: 20px;
         max-height: 15vw; 
-        min-height: 15vw;
+        min-height: 10vw;
         max-width: 15vw;
         min-width: 15vw;
         border: 4px dashed black;
@@ -229,9 +246,6 @@ h1 {
         height: 200px;
         width: 200px;
     }
-
-   
-    
     #Direction-Container {
         background-color: rgb(255, 255, 255);
         display: flex;
@@ -239,10 +253,8 @@ h1 {
         flex-direction: row;
         max-width: 100%;
         margin: 0;
-        flex-wrap: wrap;
-        
+        flex-wrap: wrap;  
     }   
-
 
     li {
         
@@ -259,14 +271,7 @@ h1 {
         max-width: 100%;
         flex-wrap: wrap;
         overflow:visible
-
-        
     }   
-
-
-
-
-   
     #cross-main-pic { width: 500px;
         position: relative;
         left: 25%;
@@ -283,13 +288,11 @@ h1 {
         margin-bottom: 25px;
         font-size: 8px;
         text-decoration: none;
-        z-index: 999; 
-        
+        z-index: 999;    
     }
 
     .Red-Axis {
         color: rgb(170, 44, 44);
-
     }
 
     #parent-container-Just1, #parent-container-Just2, #parent-container-Just3, #parent-container-Just4, #parent-container-Just5,
@@ -297,17 +300,15 @@ h1 {
         background-color: rgb(233, 193, 101);
         display: flex;
         max-height: 15vw; 
-        min-height: 15vw;
+        min-height: 10vw;
         max-width: 15vw;
         min-width: 15vw;
         border: 4px dashed black;
         border-radius: 15px;
-
     }
 
     #parent-container-Just1 {
-        justify-content: start;
-        
+        justify-content: start;   
     }
 
     #parent-container-Just2 {
@@ -325,8 +326,6 @@ h1 {
     
      #parent-container-Just6 {
         justify-content: end;
-
-
     } 
 
     .child-container-E5,  .child-container-E6{
@@ -340,8 +339,6 @@ h1 {
         border: 2px dashed rgb(0, 0, 0);
         border-radius: 5px;
         color: white;
-         
-
     }
     
     #Direction-Container3 {
@@ -351,8 +348,6 @@ h1 {
         max-width: 100%;
         margin: 0;
         flex-wrap: wrap;
-
-        
     }   
 
 
@@ -360,9 +355,9 @@ h1 {
     #parent-container-Align6{ 
         background-color: rgb(233, 193, 101);
         display: flex;
-        justify-content: column;
+        flex-direction: row; 
         max-height: 15vw; 
-        min-height: 15vw;
+        min-height: 10vw;
         max-width: 15vw;
         min-width: 15vw;
         border: 4px dashed black;
@@ -370,23 +365,13 @@ h1 {
 
     }
 
-    #parent-container-Align1 {
-    align-items: flex-start
-        
-    }
-
-    #parent-container-Align2 {
-        align-content: space-between;
-    }
-    #parent-container-Align3 {
-        align-items:  center; 
-    }
-    #parent-container-Align4 {
-        align-content: space-around;
-    }
+    #parent-container-Align1 {align-items: flex-start}
+    #parent-container-Align2 { align-content: space-between;}
+    #parent-container-Align3 { align-items:  center; }
+    #parent-container-Align4 {align-content: space-around;}
     #parent-container-Align5 { align-items: flex-end; }
     
-     #parent-container-Align6 { align-items:  center; } 
+    #parent-container-Align6 { align-items:  center; } 
 
     .child-container-E5,  .child-container-E6{
         z-index: 1;
@@ -399,7 +384,6 @@ h1 {
         border: 2px dashed rgb(0, 0, 0);
         border-radius: 5px;
         color: white;
-
     }
 
     a:-webkit-any-link { cursor: pointer; }
@@ -408,28 +392,65 @@ h1 {
 
         background-color: rgb(245, 240, 245);
         max-width: 300px;
-        min-width: 300px;
+        min-width: 50px;
         position: relative;
         left: 35%;
         padding: 15px; 
         border-radius: 5px;
-        border: 1px black dashed;
-        
-        
+        border: 1px black dashed;   
     }
 
-    code { 
-        position: relative;
-        display: inline;
-        left: 15%; 
-        
-    }
+   #Parent-Example1, #Parent-Example2, #Parent-Example3  { 
+    background-color: rgb(233, 193, 101);
+    display: flex;
+    max-height: 15vw; 
+    min-height: 15vw;
+    max-width: 15vw;
+    min-width: 15vw;
+    border: 4px dashed black;
+    border-radius: 15px;
 
-    .DarkBlue {color: blue;
-    font-weight: 800;}
+   }
 
-    .LightBlue {color: rgb(100, 149, 165);
-        font-weight: 800;}
+   .child-container-EE {
+    z-index: 1;
+    background-color: rgb(51, 172, 212);
+    flex-shrink: 0;
+    height: 3vw;; 
+    max-width: 3vw;
+    min-width: 3vw;
+    flex-wrap: wrap;
+    border: 2px dashed rgb(0, 0, 0);
+    border-radius: 5px;
+    color: white;
+   }
 
-    .Orange {color: rgb(202, 133, 4);
-         font-weight: 800;}
+   #Parent-Example1 { 
+    flex-direction: column; 
+    justify-content: space-between;
+   }
+
+   #Parent-Example2 { 
+    flex-direction: row-reverse; 
+    justify-content: space-around;
+   }
+
+#Parent-Example3 { 
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 55px;
+}
+
+#Background-of-parent2 { 
+
+    background-color: rgb(245, 240, 245);
+    max-width: 300px;
+    min-width: 50px;
+    position: relative;
+    padding: 15px; 
+    border-radius: 5px;
+    border: 1px black dashed;   
+}
+
+
