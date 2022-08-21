@@ -30,7 +30,7 @@ nav > a {
     text-decoration: none;
 }
 
-.navbar {  
+#navbar {  
     background-color: rgb(201, 200, 200); 
     display: flex;
     flex-direction: column; 
@@ -110,6 +110,8 @@ h1 {
     margin: 20px auto;
     margin-top: 50px; 
 }
+
+
 
 #parent-container
 {
@@ -238,10 +240,6 @@ h1 {
         max-width: 100%;
         margin: 0;
         flex-wrap: wrap;
-        
-        @media screen {
-            
-        }
         
     }   
 
@@ -386,15 +384,9 @@ h1 {
     #parent-container-Align4 {
         align-content: space-around;
     }
-    #parent-container-Align5 {
-        align-items: flex-end;
-    }
+    #parent-container-Align5 { align-items: flex-end; }
     
-     #parent-container-Align6 {
-        align-items:  center; 
-
-
-    } 
+     #parent-container-Align6 { align-items:  center; } 
 
     .child-container-E5,  .child-container-E6{
         z-index: 1;
@@ -410,7 +402,34 @@ h1 {
 
     }
 
-    a:-webkit-any-link { 
-        cursor: pointer;
+    a:-webkit-any-link { cursor: pointer; }
+
+    #Background-of-parent { 
+
+        background-color: rgb(245, 240, 245);
+        max-width: 300px;
+        min-width: 300px;
+        position: relative;
+        left: 35%;
+        padding: 15px; 
+        border-radius: 5px;
+        border: 1px black dashed;
+        
         
     }
+
+    code { 
+        position: relative;
+        display: inline;
+        left: 15%; 
+        
+    }
+
+    .DarkBlue {color: blue;
+    font-weight: 800;}
+
+    .LightBlue {color: rgb(100, 149, 165);
+        font-weight: 800;}
+
+    .Orange {color: rgb(202, 133, 4);
+         font-weight: 800;}

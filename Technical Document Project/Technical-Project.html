@@ -10,13 +10,13 @@
 </head>
 
 <body>
-<nav class="navbar">
+<nav id="navbar">
     <header class="Header"> Flexbox For Beginners </header>
         <a class="FlexNav1 FlexNav nav-link" href="#Introduction">Introduction</a>
-        <a class="FlexNav2 FlexNav nav-link" href="#Container">Containers</a>
+        <a class="FlexNav2 FlexNav nav-link" href="#Containers">Containers</a>
         <a class="FlexNav3 FlexNav nav-link" href="#Flex_Direction">Flex Direction</a>
-        <a class="FlexNav4 FlexNav nav-link" href="#Flex_Alignment">Flex Alignment </a>
-        <a class="FlexNav5 FlexNav nav-link" href="#Additional Examples">Additional Examples</a>
+        <a class="FlexNav4 FlexNav nav-link" href="#Flex_Alignment">Flex Alignment</a>
+        <a class="FlexNav5 FlexNav nav-link" href="#Additional_Examples">Additional Examples</a>
         <a class="FlexNav6 FlexNav nav-link" href="#Resources">Resources</a>
         <!-- Add more info -->
 
@@ -41,8 +41,8 @@
             </P>
         </article>
     </section>
-    <section class="main-section" id="Container">
-        <header class="headernav">Container</header>
+    <section class="main-section" id="Containers">
+        <header class="headernav">Containes</header>
         <article>
             <p>
                 When using flexbox, it is important to understand the parent-child dynamics. <br><br>
@@ -51,6 +51,7 @@
                 elements of <bold>direct</bold> relationship to the parent will have their layouts effected inside
                 the container. <br>
                 This excludes 'grand-children' - non direct descendance. <br><br>
+
                 <div id="parent-container">
                     <h5 class="container-text"> Parent Container</h5>
                     <div class="child-container">
@@ -63,6 +64,21 @@
                         <h5 class="container-text-child"> Child Container</h5>
                     </div>
                 </div>
+                <div id="Background-of-parent">
+                <code> <span class="DarkBlue">div</span>
+                     <span class="LightBlue">id=</span>
+                     <span class="Orange">"Parent-Container"</span><br>
+                   &nbsp; <span class="DarkBlue">div</span>
+                    <span class="LightBlue">class=</span>
+                    <span class="Orange">"Child-Container"</span><br>
+                    &nbsp; <span class="DarkBlue">div</span>
+                    <span class="LightBlue">class=</span>
+                    <span class="Orange">"Child-Container"</span><br>
+                    &nbsp;<span class="DarkBlue">div</span>
+                    <span class="LightBlue">class=</span>
+                    <span class="Orange">"Child-Container"</span><br>
+                </code>
+            </div>
                 <h1> Children Items</h1>
                 <p> A child <b>item</b>, or known as child <b> element </b>is what is directly connected to the parent.
                     <br>
