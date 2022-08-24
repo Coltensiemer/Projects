@@ -1,0 +1,21 @@
+* { 
+    border: 1px black solid;
+}
+
+body { 
+    font-family: 'Times New Roman', Times, serif;
+    height: 100vh;
+    width: 100vw;
+    
+
+}
+header { 
+
+}
+
+.upper-header {
+      width: 100vw;
+      height: 6%;
+      display: flex;
+      justify-content: space-around;
+}
