@@ -1,12 +1,12 @@
-* { 
+/* * { 
     border: 1px red solid;
-}
+    
+} */
 
 :root { 
---background-header-main: rgb(255, 255, 255);
---background-images-caption: White;
---background-text-caption-Radius: 15%;
---background-text-caption-padding: 10px;
+--background-header-main: red;
+
+--text-color: White;: White;
 }
 
 @media (min-width:600px) {.Head-Catagory {flex-direction:row !important; }
@@ -25,9 +25,7 @@
 
 body { 
     font-family: Garamond, serif;
-
-  
-  
+    
     
 }
 
@@ -36,40 +34,82 @@ body {
       max-width: 100%;
       gap: 5px;
       box-sizing: border-box;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-areas: 
-      "a a a"
-      "b b b"
-      "c c c"
-      ; 
-      top: 10px; 
-      background-color: var(--background-header-main); 
-      overflow: hidden;
-    
-    
+        display: flex;
+        flex-direction: column;
+      background-image: url(images/Fruits.png); 
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: #ffcac8;
+      
+      /* / */
 }
 
 .logo {
-    grid-area: a;
-    max-width: 100%;
-    font-size: 42px;
-    font-family: 'Londrina Solid', cursive,  Garamond, serif;
-    text-align: center;
 
+    max-width: 100%;
+    font-size: 50px;
+    font-family: 'Londrina Solid', cursive,  Garamond, serif;
+    padding: 50px;
+    padding-right: -30px;
+    background-color: var(--background-header-main);
+    opacity: 40%;
+    color: var(--text-color); 
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: black; 
 }
 
-.Searchbar { 
-    grid-area: b;
-    max-width: 100%;
-    background-color: white;
-    border-radius: var(--background-text-caption-Radius);
-    border: 2px black solid;
-    text-align: center;
-  
 
+
+#NavBar { 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly; 
+    margin-top: -20px; 
+    border-bottom: 2px black solid;
     
 }
+
+Nav > ul  { 
+    list-style: none;
+    padding: 15px;
+    background-color: var(--background-header-main);
+    opacity: 50%; 
+    color: var(--text-color);
+    font-size: 24px;
+    -webkit-text-stroke-width: .2px; 
+    -webkit-text-stroke-color: black; 
+}
+   
+
+
+
+
+.Searchbar { 
+   
+    max-width: 100%;
+    /* background-color: white;
+    border-radius: var(--background-text-caption-Radius);
+    border: 2px black solid; */
+    margin-top: 100px;
+    background-color: var(--background-header-main);
+    opacity: 40%; 
+    color: var(--text-color);
+    padding: 20px;
+
+}
+
+.example { text-align: right;
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: black    
+    }
+
+.example:focus { 
+    background-color:white; 
+}
+/* .gap-header { 
+    padding: 25px;
+} */
 
 .Head-Catagory { 
     grid-area: c;
@@ -87,21 +127,22 @@ body {
     
 }
 
-.Head-Catagory-text { 
+/* .Head-Catagory-text { 
     background-color: var(--background-images-caption);
     border-radius: var(--background-text-caption-Radius);
     padding: var(--background-text-caption-padding);
     text-align: center;
     
-}
+} */
 
 
-.main-fruit { 
+/* .main-fruit { 
     box-sizing: content-box;
     max-width: 80%;
     margin-left: 15%;
     object-fit: contain;
-}
+    z-index: -1;
+} */
 /* .section1 { 
     background-color: #ffcac8;
     margin-top: 20px;
@@ -115,7 +156,7 @@ body {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 10vw);
-    grid-gap: 15px;
+    grid-gap: 30px;
 
 
 }
@@ -125,6 +166,8 @@ body {
     height: 100%;
     object-fit: cover;
     list-style: none;
+    border: 2px border black;
+    
 
 }
 
@@ -133,7 +176,11 @@ body {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
+}
 
+.gallery-img:hover { 
+    transform: translateY(-10px);
+    transition: transform 500ms;
 }
 
 .gallery-img-2 { 
@@ -143,12 +190,14 @@ body {
     grid-row-end: 3;
 }
 
+
 .gallery-img-3 { 
     grid-column-start: 5;
     grid-column-end: 8;
     grid-row-start: 1;
     grid-row-end: 6;
 }
+
 
 .gallery-img-4 { 
     grid-column-start: 1;
@@ -215,8 +264,20 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     padding: 20px;
+    font-size: 24px;
 }
 
 footer { margin-top: 20px;
-padding: 0 1rem;}
+padding: 0 1rem;
+color:var(--text-color); 
+background-color: var(--background-header-main);
+opacity: 50%;
+border-top: 3px solid black;
+border-bottom: 3px solid black;
+}
 
+
+footer>div { 
+    text-align: center;
+
+}
