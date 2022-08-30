@@ -4,7 +4,7 @@
 } */
 
 :root { 
---background-header-main: red;
+--background-header-main: rgb(229, 105, 71);
 
 --text-color: White;: White;
 }
@@ -53,7 +53,7 @@ body {
     padding: 50px;
     padding-right: -30px;
     background-color: var(--background-header-main);
-    opacity: 40%;
+    opacity: 80%;
     color: var(--text-color); 
     -webkit-text-stroke-width: 2px; 
     -webkit-text-stroke-color: black; 
@@ -65,8 +65,11 @@ body {
     display: flex; 
     flex-direction: row;
     justify-content: space-evenly; 
-    margin-top: -20px; 
+    margin-top: 60px; 
     border-bottom: 2px black solid;
+    background-color: var(--background-header-main);
+    opacity: 90%;
+    
     
 }
 
@@ -74,7 +77,7 @@ Nav > ul  {
     list-style: none;
     padding: 15px;
     background-color: var(--background-header-main);
-    opacity: 50%; 
+    opacity: 90%; 
     color: var(--text-color);
     font-size: 24px;
     -webkit-text-stroke-width: .2px; 
@@ -93,20 +96,34 @@ Nav > ul  {
     border: 2px black solid; */
     margin-top: 100px;
     background-color: var(--background-header-main);
-    opacity: 40%; 
     color: var(--text-color);
     padding: 20px;
+    opacity: 90%;
+    display: flex;
+    justify-content: center
 
 }
 
-.example { text-align: right;
+#email { 
+    max-width: 150px;
+    width: 100%;
+    color: var(--text-color);
+    text-align: center;
     -webkit-text-stroke-width: 1px; 
-    -webkit-text-stroke-color: black    
-    }
-
-.example:focus { 
-    background-color:white; 
+    -webkit-text-stroke-color: black;  
+    padding: 7px;   
+    
+    margin-right: 5px; 
 }
+.email-button { 
+    background-color: #d1de42 ;
+    padding: 7px; 
+
+}
+
+/* .example:focus { 
+    background-color:white; 
+} */
 /* .gap-header { 
     padding: 25px;
 } */
@@ -119,13 +136,44 @@ Nav > ul  {
     flex-wrap: wrap;
     list-style: none;
     padding: 20px;
-    gap: 5px;
-    background-color: #8bcabe;
     border-radius: var(--background-text-caption-Radius);
     font-size: 18px;
 
     
 }
+
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content>a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content>a:hover {background-color: #ddd;}
+  .dropdown:hover>.dropdown-content {display: block;}
+  .dropdown:hover>.dropbtn {background-color: red;}
+
+
 
 /* .Head-Catagory-text { 
     background-color: var(--background-images-caption);
@@ -157,6 +205,7 @@ Nav > ul  {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 10vw);
     grid-gap: 30px;
+    margin-bottom: -30px;
 
 
 }
@@ -214,27 +263,22 @@ Nav > ul  {
 }
 
 .gallery-img-6 { 
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 6;
-    grid-row-end: 8;
-}
-
-.gallery-img-7 { 
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 6;
     grid-row-end: 8;
 }
 
+
+
 .gallery-img-8 { 
-    grid-column-start: 6;
+    grid-column-start: 4;
     grid-column-end: 8;
     grid-row-start: 6;
     grid-row-end: 8;
 }
 /* Fruit boxes */
-.main-catagory { 
+/* .main-catagory { 
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
@@ -242,7 +286,7 @@ Nav > ul  {
     padding-right: 20px;
     
 
-}
+} */
 
  ul > li >img{ 
     max-width: 700px;
@@ -265,19 +309,29 @@ Nav > ul  {
     justify-content: space-evenly;
     padding: 20px;
     font-size: 24px;
+    background-color: blac;
 }
 
 footer { margin-top: 20px;
 padding: 0 1rem;
 color:var(--text-color); 
 background-color: var(--background-header-main);
-opacity: 50%;
+opacity: 80%;
 border-top: 3px solid black;
 border-bottom: 3px solid black;
+padding-top: 20px;
+
 }
 
+.Gap { 
+    padding: 50px; 
+}
 
 footer>div { 
     text-align: center;
 
+}
+
+footer>div>a{
+    color: white;
 }
