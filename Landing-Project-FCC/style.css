@@ -30,7 +30,7 @@ body {
 }
 
 
-.upper-header {
+#header-background {
       max-width: 100%;
       gap: 5px;
       box-sizing: border-box;
@@ -45,7 +45,7 @@ body {
       /* / */
 }
 
-.logo {
+#header{
 
     max-width: 100%;
     font-size: 50px;
@@ -309,7 +309,6 @@ Nav > ul  {
     justify-content: space-evenly;
     padding: 20px;
     font-size: 24px;
-    background-color: blac;
 }
 
 footer { margin-top: 20px;
