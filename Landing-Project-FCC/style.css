@@ -5,6 +5,7 @@
 
 :root { 
 --background-header-main: rgb(229, 105, 71);
+--background-text-box: #1e9ce0;
 
 --text-color: White;: White;
 }
@@ -41,24 +42,31 @@ body {
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-color: #ffcac8;
-      
-      /* / */
 }
+
+
 
 #header{
 
     max-width: 100%;
     font-size: 50px;
     font-family: 'Londrina Solid', cursive,  Garamond, serif;
-    padding: 50px;
-    padding-right: -30px;
     background-color: var(--background-header-main);
     opacity: 80%;
+    padding: 50px;
+    padding-right: -30px;
     color: var(--text-color); 
     -webkit-text-stroke-width: 2px; 
     -webkit-text-stroke-color: black; 
 }
 
+:after {
+
+content: ''; 
+width:100px;
+height: 100px;
+
+}
 
 
 #NavBar { 
@@ -116,7 +124,7 @@ Nav > ul  {
     margin-right: 5px; 
 }
 .email-button { 
-    background-color: #d1de42 ;
+    background-color: var(--background-text-box);
     padding: 7px; 
 
 }
@@ -143,7 +151,7 @@ Nav > ul  {
 }
 
 .dropbtn {
-    background-color: #04AA6D;
+    background-color:var(--background-text-box);
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -220,12 +228,36 @@ Nav > ul  {
 
 }
 
+.gallery-img-5::before {
+    position: relative;
+    display: block;
+    content: ''; 
+    top: -20px;
+    left: 60px;
+    background-color: var(--background-header-main);
+    opacity: 50%;
+    z-index: -1; 
+    }
+
 .gallery-img-1 { 
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
 }
+.gallery-img-1::after {
+    position: relative;
+    display: block;
+    content: ''; 
+    width: 200px;
+    height: 100px;
+    top: -20px;
+    left: 60px;
+    background-color: var(--background-header-main);
+    opacity: 50%;
+    z-index: -2;
+    
+    }
 
 .gallery-img:hover { 
     transform: translateY(-10px);
@@ -332,5 +364,8 @@ footer>div {
 }
 
 footer>div>a{
-    color: white;
+    color: var(--background-text-box);
+    -webkit-text-stroke-width: .5px; 
+    -webkit-text-stroke-color: black; 
+}
 }
