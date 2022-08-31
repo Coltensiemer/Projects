@@ -7,10 +7,10 @@
 --background-header-main: rgb(229, 105, 71);
 --background-text-box: #1e9ce0;
 
---text-color: White;: White;
+--text-color: White;
 }
 
-@media (min-width:600px) {.Head-Catagory {flex-direction:row !important; }
+/* @media (min-width:600px) {.Head-Catagory {flex-direction:row !important; }
 .main-catagory { 
     display: flex !important;
     flex-direction: row !important;
@@ -18,7 +18,7 @@
     object-position: center !important;
     gap: 20px;
     background-color: #ffcac8;
-}
+} */
 
 /* .section2 { max-width: 100% !important; */
 /* display: flex;} */
@@ -33,10 +33,10 @@ body {
 
 #header-background {
       max-width: 100%;
-      gap: 5px;
       box-sizing: border-box;
         display: flex;
         flex-direction: column;
+        
       background-image: url(images/Fruits.png); 
       background-size: 100%;
       background-repeat: no-repeat;
@@ -48,16 +48,30 @@ body {
 
 #header{
 
-    max-width: 100%;
+    display: flex;
+    object-position: center;
+    justify-content: space-evenly;
+    position: fixed;
+    margin:auto;
     font-size: 50px;
     font-family: 'Londrina Solid', cursive,  Garamond, serif;
     background-color: var(--background-header-main);
     opacity: 100%;
-    padding: 50px;
-    padding-right: -30px;
+    padding-right: 20px;
     color: var(--text-color); 
     -webkit-text-stroke-width: 2px; 
     -webkit-text-stroke-color: black; 
+}
+
+#image-logo { 
+    display: block
+    color: black;
+    max-width: 75px;
+    max-height: 75px;
+   
+
+
+
 }
 
 
@@ -66,42 +80,45 @@ body {
     display: flex; 
     flex-direction: row;
     justify-content: space-evenly; 
-    background-color: var(--background-header-main);
-    opacity: 90%;
-    
+    gap: 10px;
+   margin: 
+ 
     
 }
 
 #nav-bar > ul { 
-    padding: 5px;
-    background-color: var(--background-text-box); 
-    color: black;
-    font-size: 24px;
-    -webkit-text-stroke-width: .5px; 
-    -webkit-text-stroke-color: black; 
-    text-decoration: none;
+    padding: 2px;
+    /* background-color: var(--background-text-box);  */
+    font-size: 16px;
+
+
 }
    
 #nav-bar > ul > a { text-decoration: none;
+    color: var(--text-color);
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: black; 
 }
 
 
 
-.Searchbar { 
+#form { 
    
     max-width: 100%;
     /* background-color: white;
     border-radius: var(--background-text-caption-Radius);
     border: 2px black solid; */
-    margin-top: 100px;
+    margin-top: 200px;
     background-color: var(--background-header-main);
     color: var(--text-color);
-    padding: 20px;
-    opacity: 90%;
+    padding: 5px;
+    opacity: 100%;
     display: flex;
     justify-content: center
 
 }
+
+/* Adding linearGradient */
 
 #email { 
     max-width: 150px;
@@ -114,7 +131,7 @@ body {
     
     margin-right: 5px; 
 }
-.email-button { 
+#submit { 
     background-color: var(--background-text-box);
     padding: 7px; 
 
