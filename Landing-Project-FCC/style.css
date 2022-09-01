@@ -7,8 +7,9 @@
 --background-header-main: rgba(226,68,68,1);
 --background-text-box: #1e9ce0;
 --background-gradient:  linear-gradient(90deg, rgba(250,91,90,1) 0%, rgba(226,68,68,1) 54%);
-
+--background-gradient2: linear-gradient(90deg, rgba(245,116,116,1) 23%, rgba(182,36,36,1) 89%);
 --text-color: White;
+
 }
 
 /* @media (min-width:600px) {.Head-Catagory {flex-direction:row !important; }
@@ -42,7 +43,7 @@ body {
       background-size: 100%;
       background-repeat: repeat;
       background-attachment: fixed;
-      background-color: #e8e9eb;
+     
 
 }
 
@@ -56,15 +57,16 @@ body {
     object-position: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin:auto;
     font-size: 50px;
     font-family: 'Londrina Solid', cursive,  Garamond, serif;
     background: var(--background-gradient);
-    opacity: 100%;
+    opacity: 90%;
     padding-right: 20px;
     color: var(--text-color); 
     -webkit-text-stroke-width: 2px; 
     -webkit-text-stroke-color: black; 
+    box-sizing: content-box;
+    width: 100%;
 }
 
 #header-image{ 
@@ -90,7 +92,7 @@ body {
 #nav-bar > ul { 
     padding: 2px;
     /* background-color: var(--background-text-box);  */
-    font-size: 16px;
+    font-size: 24px;
 
 
 }
@@ -109,12 +111,13 @@ body {
     /* background-color: white;
     border-radius: var(--background-text-caption-Radius);
     border: 2px black solid; */
-    margin-top: 200px;
     background: var(--background-gradient); 
     color: var(--text-color);
-    opacity: 100%;
+    margin-top: 10px;
+    opacity: 95%;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    padding: 5px; 
 
 }
 
@@ -141,23 +144,29 @@ body {
 .s1h, .s2h, .s3h { 
     text-align: center;
     background-color: white;
-    opacity: 80%;
+    opacity: 90%;
     border: 2px black solid;
 
 }
 
+section>p { 
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+}
 
-    .s1h ::before{
+
+    .s1h::before{
     position: relative;
     display: block;
     content: ''; 
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     width: 50%;
     height: 1vh;
     background-color: var(--background-header-main);
 
     }
-     .s1h ::after{
+     .s1h::after{
         position: relative;
        display: block;
         content: ''; 
@@ -166,13 +175,15 @@ body {
         width: 50%;
         height: 1vh;
         background-color: var(--background-header-main);
+    
 
     }
     #videocon { 
         display: flex;
         justify-content: center;
-        background-color: orange;
-        padding: 20px;
+       
+      
+        
     }
 
    iframe { margin: 0;
@@ -182,16 +193,41 @@ body {
      } 
 
 
+
+     .s2h::before{
+        position: relative;
+        display: block;
+        content: ''; 
+        margin-bottom: 10px;
+        width: 50%;
+        height: 1vh;
+        background-color: var(--background-header-main);
+    
+        }
+         .s2h::after{
+            position: relative;
+           display: block;
+            content: ''; 
+            margin-top: 5px;;
+            left:50%;
+            width: 50%;
+            height: 1vh;
+            background-color: var(--background-header-main);
+         }
+    
+
 .Gallery { 
 
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 10vw);
     grid-gap: 30px;
-    margin-top: 300px;
+    margin-top: 100px;
     margin-bottom: 30px;
     background-color: #e8e9eb;
     opacity: 95%;
+    padding: 30px;
+    overflow: hidden;
 
 }
 
@@ -200,7 +236,8 @@ body {
     height: 100%;
     object-fit: cover;
     list-style: none;
-    border: 2px border black;
+
+
     
 
 }
@@ -226,13 +263,14 @@ body {
     position: relative;
     display: block;
     content: ''; 
-    width: 200px;
-    height: 100px;
+    width: 325px;
+    height: 400px;
     top: -20px;
-    left: 60px;
-    background-color: var(--background-header-main);
-    opacity: 50%;
+    left: 150px;
+    background: var(--background-gradient2);
+    opacity: 35%;
     z-index: -2;
+  
     
     }
 
@@ -246,6 +284,47 @@ body {
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 3;
+    margin: auto; 
+    
+}
+
+.gallery-img-2::before{ 
+    position: absolute;
+    z-index: 2;
+    display: none;
+    width: 200px;
+    padding: 30px;
+    font-size: .8em;
+    line-height: 1.4em;
+    border-radius: 5px;
+    background-color: #1e9ce0;
+    color: white; 
+    content: "Kewi that provides the greatest taste";
+
+    top: calc(100%+5px);
+    left: calc(100%+5px);
+}
+
+.gallery-img-2::after { 
+    position: absolute;
+    z-index: 1; 
+    display: none; 
+    width: 0; 
+    height: 0;
+    border: 5px solid transparent; 
+    content:""; 
+    bottom: 100%; 
+    left: 50%; 
+    border-top-color: #1e9ce0;
+
+
+}
+
+.gallery-img-2:hover::before,
+.gallery-img-2:hover::after 
+ { 
+    display: block;
+
 }
 
 
@@ -259,13 +338,14 @@ body {
     position: relative;
     display: block;
     content: ''; 
-    width: 150px;
-    height: 100px;
+   min-width: 250px;
+    min-height: 200px;
     top: 0px;
     left: 40px;
-    background-color: var(--background-header-main);
-    opacity: 50%;
+    background: var(--background-gradient2);
+    opacity: 40%;
     z-index: -2;
+   
     }
 
 
@@ -298,9 +378,10 @@ body {
     height: 100px;
     top: -20px;
     left: -20px;
-    background-color: var(--background-header-main);
-    opacity: 50%;
+    background: var(--background-gradient2);
+    opacity: 20%;
     z-index: -2;
+   
     }
 
 
@@ -320,6 +401,29 @@ body {
     
 
 } */
+
+
+.s3h::before{
+    position: relative;
+    display: block;
+    content: ''; 
+    margin-bottom: 10px;
+    width: 50%;
+    height: 1vh;
+    background-color: var(--background-header-main);
+
+    }
+     .s3h::after{
+        position: relative;
+       display: block;
+        content: ''; 
+        margin-top: 10px;;
+        left:50%;
+        width: 50%;
+        height: 1vh;
+        background-color: var(--background-header-main);
+     }
+
 
  ul > li >img{ 
     max-width: 700px;
