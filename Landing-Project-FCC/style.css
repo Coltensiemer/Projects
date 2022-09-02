@@ -79,7 +79,6 @@ body {
 
 #nav-bar { 
     display: flex; 
-    flex-direction: row;
     justify-content: space-evenly; 
     gap: 10px;
     position: fixed;
@@ -116,7 +115,6 @@ body {
     border: 2px black solid; */
     background: var(--background-gradient); 
     color: var(--text-color);
-    margin-top: 10px;
     opacity: 95%;
     display: flex;
     justify-content: center;
