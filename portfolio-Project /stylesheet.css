@@ -16,20 +16,30 @@
 }
 
 
+
 .header-container { 
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    gap: 20px;
+   
+
 }
 
 #navbar>ul { 
-    display: flex;
-    flex-direction: row;
     font-size: var( --fs-header);
 }
 
 #navbar>ul>li { 
     padding: 1rem;
     list-style: none;
+}
+/* Media in nav */
+#nav-media { 
+    
 }
 
 #welcome-section { 
