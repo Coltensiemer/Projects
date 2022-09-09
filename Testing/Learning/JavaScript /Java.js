@@ -1,28 +1,31 @@
-// let name = "Funny"; 
-// name = 'Hello';
-// console.log(name); 
-
-// let person = { 
-//     name: 'Colten',
-//     age: 27
-// };
-
-
-//dot notation 
-// person.age = 30; 
-
-// person['name'] = 'Mary';
-
-// console.log(person); 
-
-// let selectColor=['red', 'blue'];
-
-// let selectColor[2]= 'green';
-
-// console.log(selectColor);
-
-function greet(name,lastName){ 
-    console.log('Hello World ' + name + '' + lastName); 
+let count = 0; 
+function cc(card) { 
+    switch(card) {
+    case 1: 
+    case 2:
+    case 3: 
+    case 4: 
+    case 5: 
+    case 6:
+        count++; 
+        break; 
+    case 10: 
+    case 'J':
+    case 'Q':
+    case 'K': 
+    case 'A':
+        count--; 
+        break; 
 }
 
-greet('Colten','Siemer'); 
+    var holdBet = "hold"; {
+        if (count > 0) {
+            holdBet = "Bet"
+        }
+    }
+    
+    return count + " " + holdBet;
+}
+ 
+cc(2); cc(3); cc(1); cc(2); cc(3);
+    console.log(cc(4))
