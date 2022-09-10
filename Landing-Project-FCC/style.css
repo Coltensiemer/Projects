@@ -260,10 +260,18 @@ section>p {
     object-fit: cover;
     list-style: none;
 
-
-    
-
 }
+
+/* .gallery-img-1{
+
+    background-color: #000900;
+    width: 100%;
+    height: 100%; 
+    place-items: center;
+
+
+
+ } */
 
 /* .gallery-img-5::before {
     position: relative;
@@ -297,10 +305,15 @@ section>p {
     
     }
 
-/* .gallery-img:hover { 
-    transform: translateY(-10px);
-    transition: transform 500ms;
-} */
+.gallery-img:hover { 
+    /* transform: translateY(-10px);
+    transition: transform 500ms; */
+    background-image: #000900;
+    width: 100px;
+    height: 100%; 
+  
+   
+}
 
 .gallery-img-2 { 
     grid-column-start: 3;
